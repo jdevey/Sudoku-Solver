@@ -1,0 +1,86 @@
+36
+1 2 3 4 5 6 7 8 9 @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+- - - X - - - - - I - N 4 B - 5 - - - R Y - D - K - 8 L - - V S A 9 - P
+- G - - A - Q - 4 - - E W 7 - - K - I - B O - - R - D N - M 6 F - C Y Z
+- H - - 8 P - J - R M - - T A D 1 F - - W - 6 - X - 3 C - - O I 5 - U -
+- - L F - N - 5 H V - 8 - E - - G 6 A - 2 - M - Y - 9 T - Z 1 - D - - R
+- 1 - - 4 - - - D - 9 - V - - - I X 8 - U Z - - - F A - 5 - - K - G J T
+5 Y R D - - W T - - B U 9 8 3 - S C - K 4 - P - V 6 2 - J - - - E L - Q
+- J - L - - - V O 2 S D R - P Z - - - 5 N - K 4 - 3 - U 9 - 8 - - - G M
+- - - - G X 4 Y @ 3 - C - 6 N 7 V - - F 8 - B H - P O R Z L 5 - Q D - J
+P 9 Q O Z - X R - - - - - - - H A - - - J V - - - 7 4 - M G - N U - K -
+A V - H - 4 - F U - - G 3 O 2 E - J Z 1 - Y - - I - - - T N - - R W - 7
+6 - - - N 5 J 8 A - - H B - Y - - - Q X - - R M - - - - - C Z L - 4 - -
+C 8 M K - F - - - T N Z - L @ G 4 1 - U - D O - Q X B - Y V 9 - 2 - S 3
+F - - - - - 5 4 - - U - T @ - - - V W - - - - E - N Y - - P 2 Q - - 1 I
+2 - H P - K Z N - - I Q - - 5 - E L - V - F - B W - S - R - U - 9 X 3 @
+- L - - W - - - 2 K - T - M 9 C 8 7 - Q I N 3 - F O @ - H 5 S - - Y - -
+@ I 5 M 1 3 G C J - - - - - O R - A U - D T - - E - V 6 X K - - - N - L
+8 - - - - A H E - @ R O - W I - Z G - M - 7 X - C - - B Q - T J F K D -
+- E - G S - - - - 1 W - H N - F - U 5 - Z J 2 K 3 - T - - - A V C R - -
+- - N @ 5 2 - - - L - J D P - Y R Q 3 - T - G A - I X - - - - M S - V -
+- X E Z V Y - 7 9 - - I - 2 1 - H - D S - K Q - B 5 N - @ F W - - - - C
+D - F - - - T W Q O - - - - U X - S 4 - 5 E - - - - - K V 1 R H 3 I 2 9
+- - 3 - - 1 2 Z - X - M - K 7 A J - F P @ 9 L - T - R O - - - D - - 5 -
+L K P S - R - D - 5 - B F - T - M 4 V 6 - U - - J 2 - - G W Q - N O - A
+G 4 - - B 8 1 - - N P - E - - - - 5 X - - - H W - U - - 6 9 - - - - - Y
+1 Z - I - B S H - P Y W - V 8 - 5 - J E Q M C - O 4 6 - - - G - L 7 N U
+- - W - C 6 @ - - - - 9 Y R - - N H - - - 8 - D 1 - - 5 L J E Z - - - S
+S - X 8 - - N K - - - V - - E - 6 @ R - 9 5 W U 7 - - P 3 - F Y B A M 2
+- 5 - 7 H - 3 A - 8 D - - - S K - - - L X - - - - - - - N U - @ 4 6 O V
+3 - - J - L 6 2 7 B G - U C - M T - - 4 H P N - A - F E - Y D 9 - - - -
+N P - - - U - M X - O - L 3 - B 7 - - - S 6 - 1 8 D C 9 K - - - J - Q -
+Y - J 9 - - - I - 7 Q K - H - 6 @ - S W - A F - L T - - B R - - O U 8 D
+M B 7 - E - - 9 F 4 1 - - - V Q - O 6 T - - - G - H - Y - - - A - S @ K
+Z - - 5 - I V - M H - X - 1 - T - N O Y - - U - 9 - 7 @ 8 - J - W Q - F
+- @ - 6 X H - - T D - P - S - W - - M I E Q 8 - - A 5 - 1 - N B - - 9 G
+R F 4 - 3 C 8 - S W - A - - J U - 9 - D - - 5 @ N - - Q - O - 6 - T 7 -
+V - 8 Q T O - - 5 Y 3 6 M A - 2 P - - - K - Z 9 G - J - D I L 4 X - C E
+
+Solved
+J C 6 X 7 E F 1 G I 2 N 4 B M 5 U Z H R Y 3 D T K @ 8 L O Q V S A 9 W P
+U G 9 T A V Q 3 4 S X E W 7 H L K 2 I J B O @ 5 R 1 D N P M 6 F 8 C Y Z
+Q H Z B 8 P 7 J K R M Y @ T A D 1 F L 9 W S 6 V X G 3 C 4 E O I 5 2 U N
+I S L F K N P 5 H V @ 8 O E Q J G 6 A C 2 X M 7 Y W 9 T U Z 1 3 D B 4 R
+W 1 2 3 4 @ O 6 D C 9 L V Y R P I X 8 N U Z E Q S F A H 5 B 7 K M G J T
+5 Y R D O M W T Z A B U 9 8 3 N S C G K 4 1 P F V 6 2 I J 7 @ X E L H Q
+7 J 1 L Y W B V O 2 S D R X P Z Q T E 5 N @ K 4 6 3 H U 9 A 8 C I F G M
+T U I E G X 4 Y @ 3 K C S 6 N 7 V M 9 F 8 W B H 2 P O R Z L 5 1 Q D A J
+P 9 Q O Z S X R 6 E L 1 C F D H A 8 T 3 J V I 2 5 7 4 W M G Y N U @ K B
+A V B H @ 4 M F U Q 5 G 3 O 2 E 9 J Z 1 L Y S C I 8 K D T N X P R W 6 7
+6 3 D 2 N 5 J 8 A 9 7 H B U Y I W K Q X P G R M @ E 1 S F C Z L V 4 T O
+C 8 M K R F I P W T N Z 5 L @ G 4 1 7 U A D O 6 Q X B J Y V 9 E 2 H S 3
+F D C R J 7 5 4 B 6 U 3 T @ K S X V W 8 O L 9 E Z N Y G A P 2 Q H M 1 I
+2 T H P 6 K Z N Y M I Q 1 D 5 4 E L C V G F A B W J S 7 R 8 U O 9 X 3 @
+B L V U W Z D X 2 K A T J M 9 C 8 7 P Q I N 3 R F O @ 1 H 5 S G 6 Y E 4
+@ I 5 M 1 3 G C J F 8 S 2 Q O R B A U H D T 4 Y E 9 V 6 X K P W 7 N Z L
+8 N Y 4 9 A H E V @ R O P W I 3 Z G 1 M 6 7 X S C L U B Q 2 T J F K D 5
+X E O G S Q 9 L P 1 W 7 H N 6 F Y U 5 @ Z J 2 K 3 M T 4 I D A V C R B 8
+9 6 N @ 5 2 K U E L F J D P W Y R Q 3 O T C G A H I X 8 7 4 B M S Z V 1
+O X E Z V Y A 7 9 G 4 I 6 2 1 8 H 3 D S R K Q J B 5 N M @ F W U T P L C
+D 7 F A M J T W Q O 6 @ N G U X C S 4 B 5 E Y 8 P Z L K V 1 R H 3 I 2 9
+H Q 3 W U 1 2 Z 8 X V M I K 7 A J B F P @ 9 L N T Y R O C S 4 D G E 5 6
+L K P S I R Y D C 5 H B F 9 T @ M 4 V 6 7 U 1 Z J 2 E 3 G W Q 8 N O X A
+G 4 T C B 8 1 S 3 N P R E Z L V O 5 X 2 M I H W D U Q A 6 9 K 7 @ J F Y
+1 Z K I F B S H R P Y W A V 8 9 5 D J E Q M C 3 O 4 6 X 2 @ G T L 7 N U
+4 M W V C 6 @ Q I U T 9 Y R X O N H 2 A F 8 7 D 1 B G 5 L J E Z K 3 P S
+S O X 8 D T N K L J C V G 4 E 1 6 @ R Z 9 5 W U 7 Q I P 3 H F Y B A M 2
+E 5 G 7 H 9 3 A 1 8 D F Q J S K 2 P Y L X B T I M R W Z N U C @ 4 6 O V
+3 R @ J Q L 6 2 7 B G 5 U C Z M T W K 4 H P N O A V F E S Y D 9 1 8 I X
+N P A Y 2 U E M X Z O 4 L 3 F B 7 I @ G S 6 V 1 8 D C 9 K T H R J 5 Q W
+Y 2 J 9 P G C I N 7 Q K Z H 4 6 @ E S W 1 A F X L T M V B R 3 5 O U 8 D
+M B 7 N E D L 9 F 4 1 2 8 5 V Q 3 O 6 T C R J G U H Z Y W X I A P S @ K
+Z A S 5 L I V B M H E X K 1 G T D N O Y 3 4 U P 9 C 7 @ 8 6 J 2 W Q R F
+K @ U 6 X H R O T D J P 7 S C W F Y M I E Q 8 L 4 A 5 2 1 3 N B Z V 9 G
+R F 4 1 3 C 8 G S W Z A X I J U L 9 B D V 2 5 @ N K P Q E O M 6 Y T 7 H
+V W 8 Q T O U @ 5 Y 3 6 M A B 2 P R N 7 K H Z 9 G S J F D I L 4 X 1 C E
+
+
+Total time: 00:00:16.8810000
+
+Strategy             Uses       Time
+Apply Changes        174        00:00:07.9320000
+Only One Possibility 62         00:00:00.0400000
+Only One Place       111        00:00:00.2750000
+Twins                0          00:00:00
+Guess                0          00:00:00

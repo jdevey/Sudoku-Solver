@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\devey\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\devey\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_SudokuSolver.-340433964.00" t="ExcludeRecursive" />
+    <e p="C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="SudokuSolver" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="FileInterface.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="SudokuSolver.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="SamplePuzzles" t="Include">
+          <e p="Input" t="Include">
+            <e p="Puzzle-16x16-0001.txt" t="Include" />
+            <e p="Puzzle-16x16-0002.txt" t="Include" />
+            <e p="Puzzle-16x16-0101.txt" t="Include" />
+            <e p="Puzzle-16x16-0102.txt" t="Include" />
+            <e p="Puzzle-16x16-0201.txt" t="Include" />
+            <e p="Puzzle-16x16-0301.txt" t="Include" />
+            <e p="Puzzle-16x16-0401.txt" t="Include" />
+            <e p="Puzzle-16x16-0901.txt" t="Include" />
+            <e p="Puzzle-16x16-0902.txt" t="Include" />
+            <e p="Puzzle-25x25-0101.txt" t="Include" />
+            <e p="Puzzle-25x25-0901.txt" t="Include" />
+            <e p="Puzzle-25x25-0902.txt" t="Include" />
+            <e p="Puzzle-25x25-0903.txt" t="Include" />
+            <e p="Puzzle-25x25-0904.txt" t="Include" />
+            <e p="Puzzle-36x36-01-A001.txt" t="Include" />
+            <e p="Puzzle-36x36-01-B001.txt" t="Include" />
+            <e p="Puzzle-36x36-01-C001.txt" t="Include" />
+            <e p="Puzzle-4x4-0001.txt" t="Include" />
+            <e p="Puzzle-4x4-0002.txt" t="Include" />
+            <e p="Puzzle-4x4-0101.txt" t="Include" />
+            <e p="Puzzle-4x4-0201.txt" t="Include" />
+            <e p="Puzzle-4x4-0901.txt" t="Include" />
+            <e p="Puzzle-4x4-0902.txt" t="Include" />
+            <e p="Puzzle-4x4-0903.txt" t="Include" />
+            <e p="Puzzle-4x4-0904.txt" t="Include" />
+            <e p="Puzzle-4x4-0905.txt" t="Include" />
+            <e p="Puzzle-4x4-0906.txt" t="Include" />
+            <e p="Puzzle-4x4-0907.txt" t="Include" />
+            <e p="Puzzle-9x9-0001.txt" t="Include" />
+            <e p="Puzzle-9x9-0002.txt" t="Include" />
+            <e p="Puzzle-9x9-0101.txt" t="Include" />
+            <e p="Puzzle-9x9-0102.txt" t="Include" />
+            <e p="Puzzle-9x9-0103.txt" t="Include" />
+            <e p="Puzzle-9x9-0201.txt" t="Include" />
+            <e p="Puzzle-9x9-0202.txt" t="Include" />
+            <e p="Puzzle-9x9-0203.txt" t="Include" />
+            <e p="Puzzle-9x9-0204.txt" t="Include" />
+            <e p="Puzzle-9x9-0205.txt" t="Include" />
+            <e p="Puzzle-9x9-0206.txt" t="Include" />
+            <e p="Puzzle-9x9-0301.txt" t="Include" />
+            <e p="Puzzle-9x9-0302.txt" t="Include" />
+            <e p="Puzzle-9x9-0401.txt" t="Include" />
+            <e p="Puzzle-9x9-0901.txt" t="Include" />
+          </e>
+          <e p="Output" t="Include">
+            <e p="Puzzle-16x16-0001.txt" t="Include" />
+            <e p="Puzzle-16x16-0002.txt" t="Include" />
+            <e p="Puzzle-16x16-0101.txt" t="Include" />
+            <e p="Puzzle-16x16-0102.txt" t="Include" />
+            <e p="Puzzle-16x16-0201.txt" t="Include" />
+            <e p="Puzzle-16x16-0301.txt" t="Include" />
+            <e p="Puzzle-16x16-0401.txt" t="Include" />
+            <e p="Puzzle-16x16-0901.txt" t="Include" />
+            <e p="Puzzle-16x16-0902.txt" t="Include" />
+            <e p="Puzzle-25x25-0101.txt" t="Include" />
+            <e p="Puzzle-25x25-0901.txt" t="Include" />
+            <e p="Puzzle-25x25-0902.txt" t="Include" />
+            <e p="Puzzle-25x25-0903.txt" t="Include" />
+            <e p="Puzzle-25x25-0904.txt" t="Include" />
+            <e p="Puzzle-36x36-01-A001.txt" t="Include" />
+            <e p="Puzzle-36x36-01-B001.txt" t="Include" />
+            <e p="Puzzle-36x36-01-C001.txt" t="Include" />
+            <e p="Puzzle-4x4-0001.txt" t="Include" />
+            <e p="Puzzle-4x4-0002.txt" t="Include" />
+            <e p="Puzzle-4x4-0101.txt" t="Include" />
+            <e p="Puzzle-4x4-0201.txt" t="Include" />
+            <e p="Puzzle-4x4-0901.txt" t="Include" />
+            <e p="Puzzle-4x4-0902.txt" t="Include" />
+            <e p="Puzzle-4x4-0903.txt" t="Include" />
+            <e p="Puzzle-4x4-0904.txt" t="Include" />
+            <e p="Puzzle-4x4-0905.txt" t="Include" />
+            <e p="Puzzle-4x4-0906.txt" t="Include" />
+            <e p="Puzzle-4x4-0907.txt" t="Include" />
+            <e p="Puzzle-9x9-0001.txt" t="Include" />
+            <e p="Puzzle-9x9-0002.txt" t="Include" />
+            <e p="Puzzle-9x9-0101.txt" t="Include" />
+            <e p="Puzzle-9x9-0102.txt" t="Include" />
+            <e p="Puzzle-9x9-0103.txt" t="Include" />
+            <e p="Puzzle-9x9-0201.txt" t="Include" />
+            <e p="Puzzle-9x9-0202.txt" t="Include" />
+            <e p="Puzzle-9x9-0203.txt" t="Include" />
+            <e p="Puzzle-9x9-0204.txt" t="Include" />
+            <e p="Puzzle-9x9-0205.txt" t="Include" />
+            <e p="Puzzle-9x9-0206.txt" t="Include" />
+            <e p="Puzzle-9x9-0301.txt" t="Include" />
+            <e p="Puzzle-9x9-0302.txt" t="Include" />
+            <e p="Puzzle-9x9-0401.txt" t="Include" />
+            <e p="Puzzle-9x9-0901.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Solver.cs" t="Include" />
+        <e p="SudokuBoard.cs" t="Include" />
+        <e p="SudokuSolver.csproj" t="IncludeRecursive" />
+        <e p="Utils.cs" t="Include" />
+      </e>
+      <e p="SudokuSolver.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
