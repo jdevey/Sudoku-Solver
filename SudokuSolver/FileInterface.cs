@@ -7,7 +7,7 @@ namespace SudokuSolver
 {
 	public static class FileInterface
 	{
-		public static SudokuBoard readFromFile(string path)
+		public static Board readFromFile(string path)
 		{
 			if (!File.Exists(path))
 			{
@@ -36,18 +36,18 @@ namespace SudokuSolver
 					"ERROR: Specified sudoku puzzle file does not have characters with length equal to one: " + path);
 			}
 
-			HashSet<char> validChars = new HashSet<char>();
+			CharSet validChars = new CharSet();
 			foreach (string characterString in characterStrings)
 			{
-				if (validChars.Contains(characterString[0]))
+				if (validChars.contains(characterString[0]))
 				{
 					throw new Exception(
 						"ERROR: Specified sudoku puzzle file character header has duplicate characters: " + path);
 				}
-				validChars.Add(characterString[0]);
+				validChars.insert(characterString[0]);
 			}
 			
-			SudokuBoard sudokuBoard = new SudokuBoard(size, validChars);
+			Board sudokuBoard = new Board(size, validChars);
 			//List <List <char>> board = new List<List<char>>();
 
 			for (int i = 2; i < lines.Length; ++i)
@@ -77,13 +77,13 @@ namespace SudokuSolver
 			return sudokuBoard;
 		}
 
-		public static void writeToFile(SudokuBoard sudokuBoard, string path)
+		public static void writeToFile(Board sudokuBoard, string path)
 		{
 			string[] fileLines = getSudokuBoardFileLines(sudokuBoard);
 			File.WriteAllLines(path, fileLines);
 		}
 
-		public static string[] getSudokuBoardFileLines(SudokuBoard sudokuBoard)
+		public static string[] getSudokuBoardFileLines(Board sudokuBoard)
 		{
 			string [] fileLines = new string[sudokuBoard.size + 2];
 			fileLines[0] = sudokuBoard.size.ToString();

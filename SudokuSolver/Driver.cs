@@ -2,7 +2,7 @@
 
 namespace SudokuSolver
 {
-	internal static class Solver
+	internal static class Driver
 	{
 		private const string helpString = "Sudoku solver arguments: \n" +
 			"-h := View this help page\n" +
@@ -22,10 +22,12 @@ namespace SudokuSolver
 				return;
 			}
 
-			SudokuBoard sudokuBoard = FileInterface.readFromFile(args[0]);
+			Board sudokuBoard = FileInterface.readFromFile(args[0]);
+			Board initialBoard = new Board(sudokuBoard);
 			
 			// TODO solve
-
+			
+			// TODO print initial board, solved board, strategies used, and time
 			if (args.Length > 1)
 			{
 				FileInterface.writeToFile(sudokuBoard, args[1]);
