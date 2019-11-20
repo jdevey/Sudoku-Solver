@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SudokuSolver", "SudokuSolver\SudokuSolver.csproj", "{3EA5F109-41CE-44C1-898D-A938B40D85AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{0C395D48-700F-4B43-A00F-B29DB97C6A40}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{3EA5F109-41CE-44C1-898D-A938B40D85AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EA5F109-41CE-44C1-898D-A938B40D85AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EA5F109-41CE-44C1-898D-A938B40D85AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C395D48-700F-4B43-A00F-B29DB97C6A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C395D48-700F-4B43-A00F-B29DB97C6A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C395D48-700F-4B43-A00F-B29DB97C6A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C395D48-700F-4B43-A00F-B29DB97C6A40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -5,6 +5,13 @@ namespace SudokuSolver
 {
 	public static class Utils
 	{
+		public enum RegionTypes
+		{
+			ROW,
+			COLUMN,
+			BLOCK
+		};
+		
 		public static bool isValidCoord(int size, int y, int x)
 		{
 			return y < size && x < size;

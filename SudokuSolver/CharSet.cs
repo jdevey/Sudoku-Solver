@@ -6,6 +6,7 @@ namespace SudokuSolver
 	public class CharSet
 	{
 		public List<bool> mem { get; }
+		private List<char> set { get; } = new List<char>();
 		private int numAlloc;
 
 		public CharSet()
@@ -20,6 +21,7 @@ namespace SudokuSolver
 			{
 				numAlloc += Convert.ToInt32(!mem[c]);
 				mem[c] = true;
+				set.Add(c);
 			}
 		}
 
@@ -27,6 +29,10 @@ namespace SudokuSolver
 		{
 			mem = Utils.listCopy(other.mem);
 			numAlloc = other.size();
+			foreach (char c in other.set)
+			{
+				set.Add(c);
+			}
 		}
 
 		public bool contains(char c)
@@ -38,12 +44,14 @@ namespace SudokuSolver
 		{
 			numAlloc += Convert.ToInt32(!mem[c]);
 			mem[c] = true;
+			set.Add(c);
 		}
 
 		public void erase(char c)
 		{
 			numAlloc -= Convert.ToInt32(mem[c]);
 			mem[c] = false;
+			set.Remove(c);
 		}
 
 		public int size()
@@ -51,17 +59,19 @@ namespace SudokuSolver
 			return numAlloc;
 		}
 
-		// TODO improve performance
-		public char findSingle()
+		public List<char> getList()
 		{
+			return set;
+		}
+
+		public void clear()
+		{
+			set.Clear();
+			numAlloc = 0;
 			for (int i = 0; i < 128; ++i)
 			{
-				if (mem[i])
-				{
-					return (char) i;
-				}
+				mem[i] = false;
 			}
-			return (char) 0;
 		}
 	}
 }

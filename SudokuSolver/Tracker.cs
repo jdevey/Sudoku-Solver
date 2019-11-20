@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Http.Headers;
 
 namespace SudokuSolver
 {
@@ -9,12 +10,12 @@ namespace SudokuSolver
 		public Board board { get; }
 		
 		// The possibilities for each cell of the board thus far
-		private List<List<CharSet>> progress = new List<List<CharSet>>();
+		public List<List<CharSet>> progress { get; } = new List<List<CharSet>>();
 
-		// The possibilities for each row, column, and region respectively
-		private List<CharSet> rows = new List<CharSet>();
-		private List<CharSet> columns = new List<CharSet>();
-		private List<CharSet>	regions = new List<CharSet>();
+		// The possibilities for each row, column, and block respectively
+		public List<CharSet> rows { get; } = new List<CharSet>();
+		public List<CharSet> columns { get; } = new List<CharSet>();
+		public List<CharSet>	blocks { get; } = new List<CharSet>();
 		
 		// TODO improve performance
 		// Create a dynamic data structure that can keep track of, for each group, the
@@ -36,7 +37,7 @@ namespace SudokuSolver
 			{
 				rows.Add(new CharSet(sudokuBoard.validCharacters));
 				columns.Add(new CharSet(sudokuBoard.validCharacters));
-				regions.Add(new CharSet(sudokuBoard.validCharacters));
+				blocks.Add(new CharSet(sudokuBoard.validCharacters));
 			}
 		}
 
@@ -46,24 +47,26 @@ namespace SudokuSolver
 			board = new Board(other.board);
 		}
 
+		// Eliminate a possibility for a cell and do nothing else
 		public void eliminatePossibility(int row, int col, char value)
 		{
-			CharSet cellProgress = progress[row][col];
-			cellProgress.erase(value);
-//			if (cellProgress.size() == 1)
+			progress[row][col].erase(value);
+//			if (progress[row][col].size() == 1)
 //			{
-//				fillSquare(row, col);
+//				fillSquare(row, col); 
 //			}
 		}
 
+		// Fills square, updates possibilities for its row, column, and block variables, and eliminates possibilities for
+		// row, column, and block variables for the progress variable
 		public void fillSquare(int row, int col)
 		{
-			char c = progress[row][col].findSingle();
+			char c = progress[row][col].getList()[0];
 			board.setCell(row, col, c);
-			int reg = convertToRegion(row, col);
+			int reg = convertToBlock(row, col);
 			rows[row].erase(c);
 			columns[col].erase(c);
-			regions[reg].erase(c);
+			blocks[reg].erase(c);
 			
 			int sqt = Utils.getIntSqrt(board.size);
 			int baseRow = row - row % sqt;
@@ -76,10 +79,19 @@ namespace SudokuSolver
 			}
 		}
 
-		private int convertToRegion(int row, int col)
+		// Converts a coordinate into which block it is
+		public int convertToBlock(int row, int col)
 		{
 			int sqt = Utils.getIntSqrt(board.size);
 			return row / sqt * sqt + col / sqt;
+		}
+
+		public Tuple<int, int> convertFromBlock(int blockInd, int ind)
+		{
+			int sqt = Utils.getIntSqrt(board.size);
+			int row = blockInd / sqt * sqt + ind / sqt;
+			int col = blockInd % sqt * sqt + ind % sqt; // TODO test
+			return new Tuple<int, int>(row, col);
 		}
 	}
 }
