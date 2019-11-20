@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba8f57e5-e749-401e-9e3f-c3c17f7589d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/UnitTests/TestAll.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/CharSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/CharSet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/Driver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Driver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/Input/Puzzle-4x4-0000.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/SingleSquare.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/SingleSquare.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/Solver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Solver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/Tracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Tracker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/Utils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Utils.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.csprojAssemblyReference.cache" afterDir="false" />
-    </list>
+    <list default="true" id="ba8f57e5-e749-401e-9e3f-c3c17f7589d7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +118,7 @@
       <workItem from="1574039591471" duration="3025000" />
       <workItem from="1574124912429" duration="916000" />
       <workItem from="1574127001437" duration="6100000" />
-      <workItem from="1574193961437" duration="28922000" />
+      <workItem from="1574193961437" duration="29204000" />
     </task>
     <servers />
   </component>
