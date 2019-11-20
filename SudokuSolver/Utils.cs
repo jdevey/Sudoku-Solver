@@ -5,15 +5,6 @@ namespace SudokuSolver
 {
 	public static class Utils
 	{
-		public const int MAX_CHAR = 128;
-		
-		public enum RegionTypes
-		{
-			ROW,
-			COLUMN,
-			BLOCK
-		};
-		
 		public static bool isValidCoord(int size, int y, int x)
 		{
 			return y < size && x < size;
@@ -27,7 +18,7 @@ namespace SudokuSolver
 		public static List<char> charSetToList (CharSet charSet)
 		{
 			List<char> charList = new List<char>();
-			for (int i = 0; i < Utils.MAX_CHAR; ++i)
+			for (int i = 0; i < Constants.MAX_CHAR; ++i)
 			{
 				if (charSet.mem[i])
 				{
@@ -79,13 +70,13 @@ namespace SudokuSolver
 
 			for (int i = 0; i < size; ++i)
 			{
-				int[] cs = new int[Utils.MAX_CHAR];
+				int[] cs = new int[Constants.MAX_CHAR];
 				for (int j = 0; j < size; ++j)
 				{
 					++cs[board.board[i][j]];
 				}
 
-				for (int j = 0; j < Utils.MAX_CHAR; ++j)
+				for (int j = 0; j < Constants.MAX_CHAR; ++j)
 				{
 					if (cs[j] > 1)
 					{
@@ -96,13 +87,13 @@ namespace SudokuSolver
 			
 			for (int i = 0; i < size; ++i)
 			{
-				int[] cs = new int[Utils.MAX_CHAR];
+				int[] cs = new int[Constants.MAX_CHAR];
 				for (int j = 0; j < size; ++j)
 				{
 					++cs[board.board[j][i]];
 				}
 
-				for (int j = 0; j < Utils.MAX_CHAR; ++j)
+				for (int j = 0; j < Constants.MAX_CHAR; ++j)
 				{
 					if (cs[j] > 1)
 					{
@@ -116,7 +107,7 @@ namespace SudokuSolver
 			{
 				for (int i = 0; i < sqt; ++i)
 				{
-					int[] cs = new int[Utils.MAX_CHAR]; 
+					int[] cs = new int[Constants.MAX_CHAR]; 
 					for (int j = 0; j < sqt; ++j)
 					{
 						for (int k = 0; k < sqt; ++k)
@@ -125,7 +116,7 @@ namespace SudokuSolver
 						}
 					}
 
-					for (int j = 0; j < Utils.MAX_CHAR; ++j)
+					for (int j = 0; j < Constants.MAX_CHAR; ++j)
 					{
 						if (cs[j] > 1)
 						{

@@ -31,6 +31,12 @@ namespace SudokuSolver
 			}
 			catch (Exception e)
 			{
+				string[] allLines = File.ReadAllLines(args[0]);
+				foreach (string l in allLines)
+				{
+					Console.WriteLine(l);
+				}
+				Console.WriteLine();
 				Console.WriteLine(e.Message);
 				return;
 			}
@@ -42,19 +48,6 @@ namespace SudokuSolver
 			
 			tracker = solver.run();
 
-			if (!tracker.valid)
-			{
-				if (tracker.solutionCnt > 1)
-				{
-					Console.WriteLine("WARNING: More than one solution found. One is shown.");
-				}
-				else
-				{
-					Console.WriteLine("ERROR: Invalid puzzle.");
-					return;
-				}
-			}
-			
 			if (!tracker.valid)
 			{
 				Console.WriteLine("ERROR: Invalid puzzle.");
@@ -71,12 +64,12 @@ namespace SudokuSolver
 				using (var writer = new StreamWriter(args[1]))
 				{
 					Console.SetOut(writer);
-					FileInterface.writeToFile(initialBoard, sudokuBoard, solver, solver.totalTimeElapsed);
+					FileInterface.writeToFile(initialBoard, tracker.board, solver, solver.totalTimeElapsed);
 				}
 			}
 			else
 			{
-				FileInterface.writeToFile(initialBoard, sudokuBoard, solver, solver.totalTimeElapsed);
+				FileInterface.writeToFile(initialBoard, tracker.board, solver, solver.totalTimeElapsed);
 			}
 			Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
 		}

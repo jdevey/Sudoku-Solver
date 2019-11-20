@@ -2,14 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba8f57e5-e749-401e-9e3f-c3c17f7589d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/SudokuSolver/Constants.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/Board.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Board.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/CharSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/CharSet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SudokuSolver/Driver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Driver.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SudokuSolver/FileInterface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/FileInterface.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/BasicInput/Puzzle-16x16-0002.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/BasicInput/Puzzle-16x16-0101.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/BasicInput/Puzzle-16x16-0102.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/BasicInput/Puzzle-16x16-0201.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/BasicInput/Puzzle-16x16-0301.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/BasicInput/Puzzle-16x16-0401.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/BasicInput/Puzzle-16x16-0901.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/BasicInput/Puzzle-16x16-0902.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/BasicInput/Puzzle-25x25-0901.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/BasicInput/Puzzle-25x25-0902.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/BasicInput/Puzzle-25x25-0903.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/BasicInput/Puzzle-25x25-0904.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/BasicInput/Puzzle-36x36-01-B001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/BasicInput/Puzzle-36x36-01-C001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/BasicInput/Puzzle-9x9-0301.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/BasicInput/Puzzle-9x9-0302.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/BasicInput/Puzzle-9x9-0401.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/BasicInput/Puzzle-9x9-0901.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/CustomInput/Puzzle-4x4-000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/MySolutions/foo.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SudokuSolver/Solver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Solver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/Tracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Tracker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/Utils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Utils.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.dll" afterDir="false" />
@@ -35,6 +56,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SudokuSolver/Constants.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SudokuSolver/IStrategy.cs" root0="FORCE_HIGHLIGHTING" />
@@ -88,16 +110,17 @@
         <option value="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/SingleRegion.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/IStrategy.cs" />
         <option value="$PROJECT_DIR$/UnitTests/SudokuVerifier.cs" />
-        <option value="$PROJECT_DIR$/SudokuSolver/CharSet.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/SingleSquare.cs" />
-        <option value="$PROJECT_DIR$/SudokuSolver/Utils.cs" />
-        <option value="$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/Board.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/Tracker.cs" />
-        <option value="$PROJECT_DIR$/UnitTests/TestAll.cs" />
-        <option value="$PROJECT_DIR$/SudokuSolver/Solver.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/Driver.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/FileInterface.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/Utils.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/CharSet.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/Constants.cs" />
+        <option value="$PROJECT_DIR$/UnitTests/TestAll.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/Solver.cs" />
       </list>
     </option>
   </component>
@@ -127,7 +150,7 @@
   <component name="RunManager" selected=".NET Project.Debug">
     <configuration name="Debug" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.dll" />
-      <option name="PROGRAM_PARAMETERS" value="C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\SudokuSolver\SamplePuzzles\Input\Puzzle-04x4-0001.txt C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\SudokuSolver\SamplePuzzles\MySolutions\foo.txt" />
+      <option name="PROGRAM_PARAMETERS" value="C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\SudokuSolver\SamplePuzzles\BasicInput\Puzzle-04x4-0902.txt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -166,7 +189,7 @@
       <workItem from="1574124912429" duration="916000" />
       <workItem from="1574127001437" duration="6100000" />
       <workItem from="1574193961437" duration="29204000" />
-      <workItem from="1574229985615" duration="14031000" />
+      <workItem from="1574229985615" duration="16653000" />
     </task>
     <servers />
   </component>
@@ -203,26 +226,26 @@
           <line>41</line>
           <properties documentPath="$PROJECT_DIR$/UnitTests/TestAll.cs" initialLine="41">
             <startOffsets>
-              <option value="807" />
+              <option value="780" />
             </startOffsets>
             <endOffsets>
-              <option value="881" />
+              <option value="854" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/SudokuSolver/Driver.cs</url>
-          <line>68</line>
-          <properties documentPath="$PROJECT_DIR$/SudokuSolver/Driver.cs" initialLine="68">
+          <url>file://$PROJECT_DIR$/SudokuSolver/Solver.cs</url>
+          <line>117</line>
+          <properties documentPath="$PROJECT_DIR$/SudokuSolver/Solver.cs" initialLine="117">
             <startOffsets>
-              <option value="1495" />
+              <option value="2943" />
             </startOffsets>
             <endOffsets>
-              <option value="1515" />
+              <option value="3003" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="72" />
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

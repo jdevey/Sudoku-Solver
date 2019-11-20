@@ -48,12 +48,10 @@ namespace SudokuSolver
 			}
 			
 			Board sudokuBoard = new Board(size, validChars);
-			//List <List <char>> board = new List<List<char>>();
 
 			for (int i = 2; i < lines.Length; ++i)
 			{
 				List<char> row = lines[i].ToCharArray().Where(c => c != ' ').ToList();
-				//board.Add(row);
 				if (row.Count != size)
 				{
 					throw new Exception(
@@ -85,7 +83,7 @@ namespace SudokuSolver
 			micros %= 1000000;
 			seconds %= 60;
 			minutes %= 60;
-			hours %= 99;
+			hours %= 100;
 			return hours.ToString().PadLeft(2, '0') + ":" +
 			       minutes.ToString().PadLeft(2, '0') + ":" +
 			       seconds.ToString().PadLeft(2, '0') + "." +

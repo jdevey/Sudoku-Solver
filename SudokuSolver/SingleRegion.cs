@@ -5,10 +5,10 @@ namespace SudokuSolver
 	public class SingleRegion : IStrategy
 	{
 		private int index;
-		private Utils.RegionTypes rt;
+		private Constants.RegionTypes rt;
 		private char check;
 		
-		public SingleRegion(int index, Utils.RegionTypes rt, char check)
+		public SingleRegion(int index, Constants.RegionTypes rt, char check)
 		{
 			this.index = index;
 			this.rt = rt;
@@ -22,7 +22,7 @@ namespace SudokuSolver
 			
 			switch (rt)
 			{
-				case Utils.RegionTypes.ROW:
+				case Constants.RegionTypes.ROW:
 					int f1 = -1;
 					for (int i = 0; i < size; ++i)
 					{
@@ -42,7 +42,7 @@ namespace SudokuSolver
 
 					return false;
 				
-				case Utils.RegionTypes.COLUMN:
+				case Constants.RegionTypes.COLUMN:
 					int f2 = -1;
 					for (int i = 0; i < size; ++i)
 					{
@@ -62,7 +62,7 @@ namespace SudokuSolver
 
 					return false;
 				
-				case Utils.RegionTypes.BLOCK:
+				case Constants.RegionTypes.BLOCK:
 					int frow = -1;
 					int fcol = -1;
 					for (int i = 0; i < size; ++i)

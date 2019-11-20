@@ -12,14 +12,14 @@ namespace UnitTests
 		[Test]
 		public void Main()
 		{
-			string path = @"..\..\..\..\SudokuSolver\SamplePuzzles\Input";
+			string path = Constants.EASY_INPUT;
 			string[] inputFiles = Directory.GetFiles(path);
-			for (int i = 0; i < inputFiles.Length; ++i)
+			foreach (string file in inputFiles)
 			{
-				Board board = null;
+				Board board;
 				try
 				{
-					board = FileInterface.readFromFile(inputFiles[i]);
+					board = FileInterface.readFromFile(file);
 				}
 				catch (Exception e)
 				{
@@ -42,7 +42,7 @@ namespace UnitTests
 						Console.WriteLine("WARNING: More than one solution found. One is shown.");
 					}
 					Assert.IsTrue(Utils.isCorrectSolution(tracker.board),
-						"ERROR: Could not find correct solution for file " + inputFiles[i] + ".");
+						"ERROR: Could not find correct solution for file " + file + ".");
 				}
 			}
 		}

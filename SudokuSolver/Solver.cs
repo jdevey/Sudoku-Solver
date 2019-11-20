@@ -61,7 +61,7 @@ namespace SudokuSolver
 				}
 			}
 			
-			foreach (Utils.RegionTypes e in Enum.GetValues(typeof(Utils.RegionTypes)))
+			foreach (Constants.RegionTypes e in Enum.GetValues(typeof(Constants.RegionTypes)))
 			{
 				for (int i = 0; i < size; ++i)
 				{
@@ -115,7 +115,7 @@ namespace SudokuSolver
 									SingleRegionElapsed += newSolver.SingleRegionElapsed;
 									GuessCnt += newSolver.GuessCnt + 1;
 									++tracker.solutionCnt;
-									if (tracker.solutionCnt == 2)
+									if (tracker.solutionCnt == 2 || retTracker.solutionCnt == 2)
 									{
 										tracker = retTracker;
 										tracker.solutionCnt = 2;
@@ -179,7 +179,7 @@ namespace SudokuSolver
 					qStrats.Enqueue(top);
 				}
 
-				if (fails >= MAX_TRIES && tracker.solutionCnt < 2)
+				if (fails >= MAX_TRIES/* && tracker.solutionCnt < 2*/)
 				{
 					//Console.WriteLine("Can't solve board without guessing.");
 					guessAll();
