@@ -1,0 +1,16 @@
+C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\UnitTests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\UnitTests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\UnitTests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\UnitTests\bin\Debug\netcoreapp2.1\UnitTests.deps.json
+C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\UnitTests\bin\Debug\netcoreapp2.1\UnitTests.runtimeconfig.json
+C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\UnitTests\bin\Debug\netcoreapp2.1\UnitTests.runtimeconfig.dev.json
+C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\UnitTests\bin\Debug\netcoreapp2.1\UnitTests.dll
+C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\UnitTests\bin\Debug\netcoreapp2.1\UnitTests.pdb
+C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\UnitTests\bin\Debug\netcoreapp2.1\SudokuSolver.dll
+C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\UnitTests\bin\Debug\netcoreapp2.1\SudokuSolver.pdb
+C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\UnitTests\obj\Debug\netcoreapp2.1\UnitTests.csprojAssemblyReference.cache
+C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\UnitTests\obj\Debug\netcoreapp2.1\UnitTests.AssemblyInfoInputs.cache
+C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\UnitTests\obj\Debug\netcoreapp2.1\UnitTests.AssemblyInfo.cs
+C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\UnitTests\obj\Debug\netcoreapp2.1\UnitTests.csproj.CopyComplete
+C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\UnitTests\obj\Debug\netcoreapp2.1\UnitTests.dll
+C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\UnitTests\obj\Debug\netcoreapp2.1\UnitTests.pdb

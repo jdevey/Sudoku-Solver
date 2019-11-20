@@ -35,7 +35,7 @@ namespace SudokuSolver
 
 					if (charCnt == 1)
 					{
-						tracker.fillSquare(index, f1);
+						tracker.fillSquare(index, f1, check);
 						return true;
 					}
 
@@ -54,7 +54,7 @@ namespace SudokuSolver
 
 					if (charCnt == 1)
 					{
-						tracker.fillSquare(f2, index);
+						tracker.fillSquare(f2, index, check);
 						return true;
 					}
 
@@ -78,7 +78,7 @@ namespace SudokuSolver
 
 					if (charCnt == 1)
 					{
-						tracker.fillSquare(frow, fcol);
+						tracker.fillSquare(frow, fcol, check);
 						return true;
 					}
 

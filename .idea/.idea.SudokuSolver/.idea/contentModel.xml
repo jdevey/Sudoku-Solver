@@ -26,7 +26,11 @@
           </e>
         </e>
         <e p="SamplePuzzles" t="Include">
+          <e p="CustomInput" t="Include">
+            <e p="Puzzle-4x4-000.txt" t="Include" />
+          </e>
           <e p="Input" t="Include">
+            <e p="Puzzle-04x4-0001.txt" t="Include" />
             <e p="Puzzle-16x16-0001.txt" t="Include" />
             <e p="Puzzle-16x16-0002.txt" t="Include" />
             <e p="Puzzle-16x16-0101.txt" t="Include" />
@@ -135,6 +139,7 @@
           </e>
         </e>
         <e p="SudokuVerifier.cs" t="Include" />
+        <e p="TestAll.cs" t="Include" />
         <e p="UnitTest1.cs" t="Include" />
         <e p="UnitTests.csproj" t="IncludeRecursive" />
       </e>

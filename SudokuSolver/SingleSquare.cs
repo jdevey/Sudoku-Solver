@@ -18,7 +18,7 @@ namespace SudokuSolver
 		// Attempt to fill in a square if doing so is valid; return true if successful
 		public bool execute(Tracker tracker)
 		{
-			if (tracker.progress[row][col].size() == 1)
+			if (tracker.board.board[row][col] == '-' && tracker.progress[row][col].size() == 1)
 			{
 				tracker.fillSquare(row, col);
 				return true;

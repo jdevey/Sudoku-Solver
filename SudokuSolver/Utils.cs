@@ -5,6 +5,8 @@ namespace SudokuSolver
 {
 	public static class Utils
 	{
+		public const int MAX_CHAR = 128;
+		
 		public enum RegionTypes
 		{
 			ROW,
@@ -25,7 +27,7 @@ namespace SudokuSolver
 		public static List<char> charSetToList (CharSet charSet)
 		{
 			List<char> charList = new List<char>();
-			for (int i = 0; i < 128; ++i)
+			for (int i = 0; i < Utils.MAX_CHAR; ++i)
 			{
 				if (charSet.mem[i])
 				{
@@ -54,6 +56,86 @@ namespace SudokuSolver
 		public static int getIntSqrt(int n)
 		{
 			return (int)Math.Sqrt(n);
+		}
+
+		public static bool isCorrectSolution(Board board)
+		{
+			int size = board.size;
+			if (board.board.Count != size || board.board.Count != size)
+			{
+				return false;
+			}
+
+			for (int i = 0; i < size; ++i)
+			{
+				for (int j = 0; j < size; ++j)
+				{
+					if (board.board[i][j] == '-')
+					{
+						return false;
+					}
+				}
+			}
+
+			for (int i = 0; i < size; ++i)
+			{
+				int[] cs = new int[Utils.MAX_CHAR];
+				for (int j = 0; j < size; ++j)
+				{
+					++cs[board.board[i][j]];
+				}
+
+				for (int j = 0; j < Utils.MAX_CHAR; ++j)
+				{
+					if (cs[j] > 1)
+					{
+						return false;
+					}
+				}
+			}
+			
+			for (int i = 0; i < size; ++i)
+			{
+				int[] cs = new int[Utils.MAX_CHAR];
+				for (int j = 0; j < size; ++j)
+				{
+					++cs[board.board[j][i]];
+				}
+
+				for (int j = 0; j < Utils.MAX_CHAR; ++j)
+				{
+					if (cs[j] > 1)
+					{
+						return false;
+					}
+				}
+			}
+
+			int sqt = getIntSqrt(size);
+			for (int h = 0; h < sqt; ++h)
+			{
+				for (int i = 0; i < sqt; ++i)
+				{
+					int[] cs = new int[Utils.MAX_CHAR]; 
+					for (int j = 0; j < sqt; ++j)
+					{
+						for (int k = 0; k < sqt; ++k)
+						{
+							++cs[board.board[h * sqt + j][i * sqt + k]];
+						}
+					}
+
+					for (int j = 0; j < Utils.MAX_CHAR; ++j)
+					{
+						if (cs[j] > 1)
+						{
+							return false;
+						}
+					}
+				}
+			}
+
+			return true;
 		}
 	}
 }

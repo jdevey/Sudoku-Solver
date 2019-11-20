@@ -45,8 +45,6 @@ namespace SudokuSolver
 			long end = DateTime.Now.Ticks;
 			long totalMicros = (end - start) / 10;
 			
-			
-			// TODO print initial board, solved board, strategies used, and time
 			if (args.Length > 1)
 			{
 				var writer = new StreamWriter(args[1]);

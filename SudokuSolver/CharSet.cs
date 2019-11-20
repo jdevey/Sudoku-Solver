@@ -11,12 +11,12 @@ namespace SudokuSolver
 
 		public CharSet()
 		{
-			mem = new List<bool>(new bool[128]);
+			mem = new List<bool>(new bool[Utils.MAX_CHAR]);
 		}
 
 		public CharSet(IEnumerable<char> init)
 		{
-			mem = new List<bool>(new bool[128]);
+			mem = new List<bool>(new bool[Utils.MAX_CHAR]);
 			foreach (char c in init)
 			{
 				numAlloc += Convert.ToInt32(!mem[c]);
@@ -68,7 +68,7 @@ namespace SudokuSolver
 		{
 			set.Clear();
 			numAlloc = 0;
-			for (int i = 0; i < 128; ++i)
+			for (int i = 0; i < Utils.MAX_CHAR; ++i)
 			{
 				mem[i] = false;
 			}
