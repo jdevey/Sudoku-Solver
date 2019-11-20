@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Net.Http.Headers;
 
 namespace SudokuSolver
 {
@@ -13,10 +12,10 @@ namespace SudokuSolver
 		public List<List<CharSet>> progress { get; } = new List<List<CharSet>>();
 
 		// The possibilities for each row, column, and block respectively
-		public List<CharSet> rows { get; } = new List<CharSet>();
-		public List<CharSet> columns { get; } = new List<CharSet>();
-		public List<CharSet>	blocks { get; } = new List<CharSet>();
-		
+//		public List<CharSet> rows { get; } = new List<CharSet>();
+//		public List<CharSet> columns { get; } = new List<CharSet>();
+//		public List<CharSet>	blocks { get; } = new List<CharSet>();
+
 		// TODO improve performance
 		// Create a dynamic data structure that can keep track of, for each group, the
 		// characters in that group that have the fewest possible cells in which they can fit
@@ -32,19 +31,19 @@ namespace SudokuSolver
 					progress[i].Add(new CharSet(sudokuBoard.validCharacters));
 				}
 			}
-
-			for (int i = 0; i < sudokuBoard.size; ++i)
-			{
-				rows.Add(new CharSet(sudokuBoard.validCharacters));
-				columns.Add(new CharSet(sudokuBoard.validCharacters));
-				blocks.Add(new CharSet(sudokuBoard.validCharacters));
-			}
+//
+//			for (int i = 0; i < sudokuBoard.size; ++i)
+//			{
+//				rows.Add(new CharSet(sudokuBoard.validCharacters));
+//				columns.Add(new CharSet(sudokuBoard.validCharacters));
+//				blocks.Add(new CharSet(sudokuBoard.validCharacters));
+//			}
 		}
 
-		// TODO finish copy constructor
 		public Tracker(Tracker other)
 		{
 			board = new Board(other.board);
+		// TODO finish copy constructor
 		}
 
 		// Eliminate a possibility for a cell and do nothing else
@@ -63,10 +62,11 @@ namespace SudokuSolver
 		{
 			char c = progress[row][col].getList()[0];
 			board.setCell(row, col, c);
+			++board.solvedCnt;
 			int reg = convertToBlock(row, col);
-			rows[row].erase(c);
-			columns[col].erase(c);
-			blocks[reg].erase(c);
+//			rows[row].erase(c);
+//			columns[col].erase(c);
+//			blocks[reg].erase(c);
 			
 			int sqt = Utils.getIntSqrt(board.size);
 			int baseRow = row - row % sqt;

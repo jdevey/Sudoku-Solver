@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using System.IO;
 
 namespace SudokuSolver
 {
@@ -22,23 +24,36 @@ namespace SudokuSolver
 				return;
 			}
 
-			Board sudokuBoard = FileInterface.readFromFile(args[0]);
+			Board sudokuBoard = null;
+			try
+			{
+				sudokuBoard = FileInterface.readFromFile(args[0]);
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine(e.Message);
+				return;
+			}
+
 			Board initialBoard = new Board(sudokuBoard);
 			
-			// TODO solve
+			Tracker tracker = new Tracker(sudokuBoard);
+			Solver solver = new Solver(tracker);
+			
+			long start = DateTime.Now.Ticks;
+			solver.run(); // TODO return value unused
+			long end = DateTime.Now.Ticks;
+			long totalMicros = (end - start) / 10;
+			
 			
 			// TODO print initial board, solved board, strategies used, and time
 			if (args.Length > 1)
 			{
-				FileInterface.writeToFile(sudokuBoard, args[1]);
+				var writer = new StreamWriter(args[1]);
+				Console.SetOut(writer);
 			}
-			else
-			{
-				foreach (string line in FileInterface.getSudokuBoardFileLines(sudokuBoard))
-				{
-					Console.WriteLine(line);
-				}
-			}
+			FileInterface.writeToFile(initialBoard, sudokuBoard, solver, totalMicros);
+			Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
 		}
 	}
 }

@@ -4,7 +4,6 @@ C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\SudokuSolver\bin\Debug\netcor
 C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\SudokuSolver\bin\Debug\netcoreapp2.1\SudokuSolver.dll
 C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\SudokuSolver\bin\Debug\netcoreapp2.1\SudokuSolver.pdb
 C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\SudokuSolver\obj\Debug\netcoreapp2.1\SudokuSolver.csprojAssemblyReference.cache
-C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\SudokuSolver\obj\Debug\netcoreapp2.1\SudokuSolver.csproj.CoreCompileInputs.cache
 C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\SudokuSolver\obj\Debug\netcoreapp2.1\SudokuSolver.AssemblyInfoInputs.cache
 C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\SudokuSolver\obj\Debug\netcoreapp2.1\SudokuSolver.AssemblyInfo.cs
 C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\SudokuSolver\obj\Debug\netcoreapp2.1\SudokuSolver.dll

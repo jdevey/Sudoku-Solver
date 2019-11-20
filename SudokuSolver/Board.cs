@@ -8,6 +8,8 @@ namespace SudokuSolver
 		public int size { get; }
 		public List<List <char>> board { get; }
 		public CharSet validCharacters { get; }
+
+		public int solvedCnt { get; set; }
 		
 		public Board(int size, CharSet validCharacters)
 		{
@@ -31,7 +33,7 @@ namespace SudokuSolver
 		public Board(Board other)
 		{
 			size = other.size;
-			CharSet newValidCharacters = new CharSet(other.validCharacters);
+			validCharacters = new CharSet(other.validCharacters);
 
 			List<List<char>> newBoard = new List<List<char>>();
 			foreach (List<char> row in other.board)

@@ -77,23 +77,52 @@ namespace SudokuSolver
 			return sudokuBoard;
 		}
 
-		public static void writeToFile(Board sudokuBoard, string path)
+		// It is assumed that we will redirect stdout if we are reading to a file
+		public static void writeToFile(Board initialBoard, Board solvedBoard, Solver solver, long totalMillis)
 		{
-			string[] fileLines = getSudokuBoardFileLines(sudokuBoard);
-			File.WriteAllLines(path, fileLines);
+			// Write initial puzzle
+			Console.WriteLine(initialBoard.size.ToString());
+			Console.WriteLine(lineToString(initialBoard.validCharacters.getList()));
+			string[] initFileLines = getSudokuBoardFileLines(initialBoard);
+			for (int i = 0; i < initialBoard.size; ++i)
+			{
+				Console.WriteLine(initFileLines[i]);
+			}
+			Console.WriteLine();
+			
+			// Write solved puzzle and stats
+			Console.WriteLine("Solved");
+			string[] solvedFileLines = getSudokuBoardFileLines(solvedBoard);
+			for (int i = 0; i < initialBoard.size; ++i)
+			{
+				Console.WriteLine(solvedFileLines[i]);
+			}
+			Console.WriteLine();
+
+			Console.WriteLine("Total time: " + totalMillis);
+
+			Console.WriteLine("Strategy Uses Time");
+			Console.WriteLine("Single Possibility for Square " + solver.SingleSquareCnt + " " + solver.SingleSquareElapsed);
+			Console.WriteLine("Single Possibility for Region " + solver.SingleRegionCnt + " " + solver.SingleSquareElapsed);
 		}
 
 		public static string[] getSudokuBoardFileLines(Board sudokuBoard)
 		{
-			string [] fileLines = new string[sudokuBoard.size + 2];
-			fileLines[0] = sudokuBoard.size.ToString();
-			fileLines[1] = string.Join(" ", sudokuBoard.validCharacters);
+			string [] fileLines = new string[sudokuBoard.size];
 			for (int i = 0; i < sudokuBoard.size; ++i)
 			{
-				fileLines[i + 2] = string.Join(" ", sudokuBoard.board[i]);
+				fileLines[i] = string.Join(" ", sudokuBoard.board[i]);
 			}
 
 			return fileLines;
+		}
+
+		public static string lineToString(List<char> l)
+		{
+			string s;
+			var ar = l.ToArray();
+			s = string.Join(" ", ar);
+			return s;
 		}
 	}
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 
 namespace SudokuSolver
 {
@@ -24,6 +25,11 @@ namespace SudokuSolver
 			}
 
 			return false;
+		}
+
+		public Tuple<int, int> getTuple()
+		{
+			return new Tuple<int, int>(row, col);
 		}
 	}
 }
