@@ -40,17 +40,44 @@ namespace SudokuSolver
 			Tracker tracker = new Tracker(sudokuBoard);
 			Solver solver = new Solver(tracker);
 			
-			long start = DateTime.Now.Ticks;
-			solver.run(); // TODO return value unused
-			long end = DateTime.Now.Ticks;
-			long totalMicros = (end - start) / 10;
+			tracker = solver.run();
+
+			if (!tracker.valid)
+			{
+				if (tracker.solutionCnt > 1)
+				{
+					Console.WriteLine("WARNING: More than one solution found. One is shown.");
+				}
+				else
+				{
+					Console.WriteLine("ERROR: Invalid puzzle.");
+					return;
+				}
+			}
 			
+			if (!tracker.valid)
+			{
+				Console.WriteLine("ERROR: Invalid puzzle.");
+				return;
+			}
+			
+			if (tracker.solutionCnt > 1)
+			{
+				Console.WriteLine("WARNING: More than one solution found. One is shown.");
+			}
+
 			if (args.Length > 1)
 			{
-				var writer = new StreamWriter(args[1]);
-				Console.SetOut(writer);
+				using (var writer = new StreamWriter(args[1]))
+				{
+					Console.SetOut(writer);
+					FileInterface.writeToFile(initialBoard, sudokuBoard, solver, solver.totalTimeElapsed);
+				}
 			}
-			FileInterface.writeToFile(initialBoard, sudokuBoard, solver, totalMicros);
+			else
+			{
+				FileInterface.writeToFile(initialBoard, sudokuBoard, solver, solver.totalTimeElapsed);
+			}
 			Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
 		}
 	}

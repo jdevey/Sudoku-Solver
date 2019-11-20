@@ -77,6 +77,21 @@ namespace SudokuSolver
 			return sudokuBoard;
 		}
 
+		public static string getTimeString(long micros)
+		{
+			long seconds = micros / 1000000;
+			long minutes = seconds / 60;
+			long hours = minutes / 60;
+			micros %= 1000000;
+			seconds %= 60;
+			minutes %= 60;
+			hours %= 99;
+			return hours.ToString().PadLeft(2, '0') + ":" +
+			       minutes.ToString().PadLeft(2, '0') + ":" +
+			       seconds.ToString().PadLeft(2, '0') + "." +
+			       micros.ToString().PadLeft(6, '0');
+		}
+
 		// It is assumed that we will redirect stdout if we are reading to a file
 		public static void writeToFile(Board initialBoard, Board solvedBoard, Solver solver, long totalMillis)
 		{
@@ -99,11 +114,18 @@ namespace SudokuSolver
 			}
 			Console.WriteLine();
 
-			Console.WriteLine("Total time: " + totalMillis);
+			Console.WriteLine("Total time: " + getTimeString(totalMillis));
 
-			Console.WriteLine("Strategy Uses Time");
-			Console.WriteLine("Single Possibility for Square " + solver.SingleSquareCnt + " " + solver.SingleSquareElapsed);
-			Console.WriteLine("Single Possibility for Region " + solver.SingleRegionCnt + " " + solver.SingleSquareElapsed);
+			Console.WriteLine("Strategy                        Uses            Time");
+			Console.WriteLine("Single Possibility for Square   " +
+			                  solver.SingleSquareCnt.ToString().PadRight(16, ' ') +
+			                  getTimeString(solver.SingleSquareElapsed));
+			Console.WriteLine("Single Possibility for Region   " +
+			                  solver.SingleRegionCnt.ToString().PadRight(16, ' ') +
+			                  getTimeString(solver.SingleRegionElapsed));
+			Console.WriteLine("Guessing strategy               " +
+			                  solver.GuessCnt.ToString().PadRight(16, ' ') +
+			                  getTimeString(solver.guessTimeElapsed));
 		}
 
 		public static string[] getSudokuBoardFileLines(Board sudokuBoard)

@@ -10,8 +10,12 @@ namespace SudokuSolver
 		
 		// The possibilities for each cell of the board thus far
 		public List<List<CharSet>> progress { get; } = new List<List<CharSet>>();
+		
+		public int solvedCnt { get; set; }
 
 		public bool valid { get; set; } = true;
+
+		public int solutionCnt { get; set; }
 
 		// The possibilities for each row, column, and block respectively
 //		public List<CharSet> rows { get; } = new List<CharSet>();
@@ -55,6 +59,8 @@ namespace SudokuSolver
 					newProgress[i].Add(new CharSet(other.progress[i][j]));
 				}
 			}
+
+			progress = newProgress;
 		}
 
 		// Eliminate a possibility for a cell and do nothing else
@@ -73,7 +79,7 @@ namespace SudokuSolver
 		{
 			char c = progress[row][col].getList()[0];
 			board.setCell(row, col, c);
-			++board.solvedCnt;
+			++solvedCnt;
 
 			int sqt = Utils.getIntSqrt(board.size);
 			int baseRow = row - row % sqt;
@@ -90,7 +96,7 @@ namespace SudokuSolver
 		public void fillSquare(int row, int col, char c)
 		{
 			board.setCell(row, col, c);
-			++board.solvedCnt;
+			++solvedCnt;
 
 			int sqt = Utils.getIntSqrt(board.size);
 			int baseRow = row - row % sqt;

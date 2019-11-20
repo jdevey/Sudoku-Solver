@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 
 namespace SudokuSolver
 {
@@ -21,7 +20,7 @@ namespace SudokuSolver
 		public long SingleSquareCnt { get; set; }
 		public long SingleRegionCnt { get; set; }
 		public long GuessCnt { get; set; }
-		
+
 		public Solver(Tracker tracker)
 		{
 			this.tracker = tracker;
@@ -43,12 +42,6 @@ namespace SudokuSolver
 						tracker.progress[i][j].clear();
 						tracker.progress[i][j].insert(c);
 						tracker.fillSquare(i, j, c);
-						
-						// leave it here so the singlesquare strat can pick it up
-//						tracker.rows[i].erase(c);
-//						tracker.columns[j].erase(c);
-//						int reg = tracker.convertToBlock(i, j);
-//						tracker.blocks[reg].erase(c);
 					}
 				}
 			}
@@ -61,10 +54,10 @@ namespace SudokuSolver
 			{
 				for (int j = 0; j < size; ++j)
 				{
-//					if (!singleSquareVis.Contains(new Tuple<int, int>(i, j)))
-//					{
+					if (tracker.board.board[i][j] == '-')
+					{
 						qStrats.Enqueue(new SingleSquare(i, j));
-//					}
+					}
 				}
 			}
 			
@@ -74,28 +67,25 @@ namespace SudokuSolver
 				{
 					foreach (char c in tracker.board.validCharacters.getList())
 					{
-//						if (!singleRegionVis.Contains(new Tuple<int, string, char>(i, e.ToString(), c)))
-//						{
-							qStrats.Enqueue(new SingleRegion(i, e, c));
-//						}
+						qStrats.Enqueue(new SingleRegion(i, e, c));
 					}
 				}
 			}
 		}
 
-		private int getMinGuessSize()
-		{
-			int mn = tracker.board.size;
-			for (int i = 0; i < size; ++i)
-			{
-				for (int j = 0; j < size; ++j)
-				{
-					mn = Math.Min(mn, tracker.progress[i][j].size());
-				}
-			}
-
-			return mn;
-		}
+//		private int getMinGuessSize()
+//		{
+//			int mn = tracker.board.size;
+//			for (int i = 0; i < size; ++i)
+//			{
+//				for (int j = 0; j < size; ++j)
+//				{
+//					mn = Math.Min(mn, tracker.progress[i][j].size());
+//				}
+//			}
+//
+//			return mn;
+//		}
 		
 		public void guessAll()
 		{
@@ -106,28 +96,39 @@ namespace SudokuSolver
 				{
 					for (int j = 0; j < size; ++j)
 					{
+						if (tracker.board.board[i][j] != '-')
+						{
+							continue;
+						}
 						CharSet possib = tracker.progress[i][j];
 						if (possib.size() == k)
 						{
 							for (int l = 0; l < k; ++l)
 							{
 								Tracker newTracker = new Tracker(tracker);
-								newTracker.fillSquare(i, j, possib.getList()[l]);
+								newTracker.board.setCell(i, j, possib.getList()[l]);
 								Solver newSolver = new Solver(newTracker);
-								newSolver.run();
-								if (newTracker.valid)
+								Tracker retTracker = newSolver.run();
+								if (retTracker.valid)
 								{
 									SingleSquareElapsed += newSolver.SingleSquareElapsed;
 									SingleRegionElapsed += newSolver.SingleRegionElapsed;
-									GuessCnt = GuessCnt + newSolver.GuessCnt + 1;
-									tracker = newTracker;
-									goto breakout;
+									GuessCnt += newSolver.GuessCnt + 1;
+									++tracker.solutionCnt;
+									if (tracker.solutionCnt == 2)
+									{
+										tracker = retTracker;
+										tracker.solutionCnt = 2;
+										goto breakout;
+									}
 								}
 							}
 						}
 					}
 				}
 			}
+
+			tracker.valid = false;
 			
 			breakout:
 			
@@ -136,13 +137,13 @@ namespace SudokuSolver
 			guessTimeElapsed += timeMicros;
 		}
 
-		public Board run()
+		public Tracker run()
 		{
 			prepareBoard();
 			long totalStart = DateTime.Now.Ticks;
-			int tries = 0;
+			int fails = 0;
 			//Tuple <int, int> lastSingleSquare = new Tuple<int, int>(-1, -1);
-			while (tracker.board.solvedCnt < size * size)
+			while (tracker.solvedCnt < size * size)
 			{
 				IStrategy top = qStrats.Dequeue();
 				long start = DateTime.Now.Ticks;
@@ -155,7 +156,7 @@ namespace SudokuSolver
 						break;
 					}
 				}
-				tries = success ? 0 : tries + 1;
+				fails = success ? 0 : fails + 1;
 				long micros = (end - start) / 10;
 				if (top.GetType() == typeof(SingleSquare))
 				{
@@ -163,9 +164,7 @@ namespace SudokuSolver
 					if (success)
 					{
 						++SingleSquareCnt;
-					//SingleSquare tp = (SingleSquare) top;
 					}
-					//if (success) lastSingleSquare = tp.getTuple();
 				}
 				else if (top.GetType() == typeof(SingleRegion))
 				{
@@ -180,17 +179,17 @@ namespace SudokuSolver
 					qStrats.Enqueue(top);
 				}
 
-//				if (tries >= MAX_TRIES)
-//				{
-//					Console.WriteLine("Can't solve board without guessing.");
-//					guessAll();
-//					break;
-//				}
+				if (fails >= MAX_TRIES && tracker.solutionCnt < 2)
+				{
+					//Console.WriteLine("Can't solve board without guessing.");
+					guessAll();
+					break;
+				}
 			}
 			long totalEnd = DateTime.Now.Ticks;
 			totalTimeElapsed = (totalEnd - totalStart) / 10;
 			
-			return tracker.board;
+			return tracker;
 		}
 	}
 }

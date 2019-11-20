@@ -9,8 +9,6 @@ namespace SudokuSolver
 		public List<List <char>> board { get; }
 		public CharSet validCharacters { get; }
 
-		public int solvedCnt { get; set; }
-		
 		public Board(int size, CharSet validCharacters)
 		{
 			if (size != validCharacters.size())

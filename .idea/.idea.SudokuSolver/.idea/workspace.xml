@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba8f57e5-e749-401e-9e3f-c3c17f7589d7" name="Default Changelist" comment="" />
+    <list default="true" id="ba8f57e5-e749-401e-9e3f-c3c17f7589d7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/Board.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Board.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/Driver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Driver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/FileInterface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/FileInterface.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/Solver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Solver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/Tracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Tracker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/TestAll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/TestAll.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/SudokuSolver.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/SudokuSolver.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/UnitTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/UnitTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/UnitTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/UnitTests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/nunit_random_seed.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/nunit_random_seed.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.pdb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,22 +34,47 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SudokuSolver/IStrategy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SudokuSolver/Solver.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SudokuSolver/SingleSquare.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SudokuSolver/Utils.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SudokuSolver/Board.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SudokuSolver/FileInterface.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SudokuSolver/Driver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SudokuSolver/Tracker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E2088BF4-707B-4535-A1D2-683A76EDB1A8/aa/bc36da37/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/nunit/nunit/c933a883ea25263ec575a654dae69fa38000edd9/src/NUnitFramework/framework/Internal/Reflect.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UnitTests/SudokuVerifier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SudokuSolver/SingleSquare.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SudokuSolver/Utils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SudokuSolver/Board.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SudokuSolver/FileInterface.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SudokuSolver/CharSet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UnitTests/TestAll.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UnitTests/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/UnitTests/SudokuVerifier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -42,15 +89,15 @@
         <option value="$PROJECT_DIR$/SudokuSolver/IStrategy.cs" />
         <option value="$PROJECT_DIR$/UnitTests/SudokuVerifier.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/CharSet.cs" />
-        <option value="$PROJECT_DIR$/SudokuSolver/Board.cs" />
-        <option value="$PROJECT_DIR$/SudokuSolver/FileInterface.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/SingleSquare.cs" />
-        <option value="$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" />
-        <option value="$PROJECT_DIR$/SudokuSolver/Tracker.cs" />
-        <option value="$PROJECT_DIR$/SudokuSolver/Solver.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/Utils.cs" />
-        <option value="$PROJECT_DIR$/SudokuSolver/Driver.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/Board.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/Tracker.cs" />
         <option value="$PROJECT_DIR$/UnitTests/TestAll.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/Solver.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/Driver.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/FileInterface.cs" />
       </list>
     </option>
   </component>
@@ -80,7 +127,7 @@
   <component name="RunManager" selected=".NET Project.Debug">
     <configuration name="Debug" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.dll" />
-      <option name="PROGRAM_PARAMETERS" value="C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\SudokuSolver\SamplePuzzles\Input\Puzzle-4x4-0001.txt" />
+      <option name="PROGRAM_PARAMETERS" value="C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\SudokuSolver\SamplePuzzles\Input\Puzzle-04x4-0001.txt C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\SudokuSolver\SamplePuzzles\MySolutions\foo.txt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -119,6 +166,7 @@
       <workItem from="1574124912429" duration="916000" />
       <workItem from="1574127001437" duration="6100000" />
       <workItem from="1574193961437" duration="29204000" />
+      <workItem from="1574229985615" duration="14031000" />
     </task>
     <servers />
   </component>
@@ -151,49 +199,39 @@
           <option name="timeStamp" value="1" />
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/SudokuSolver/Tracker.cs</url>
-          <line>65</line>
-          <properties documentPath="$PROJECT_DIR$/SudokuSolver/Tracker.cs" initialLine="65">
-            <startOffsets>
-              <option value="1983" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1997" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/SudokuSolver/Solver.cs</url>
-          <line>101</line>
-          <properties documentPath="$PROJECT_DIR$/SudokuSolver/Solver.cs" initialLine="100">
-            <startOffsets>
-              <option value="2444" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2481" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/UnitTests/TestAll.cs</url>
-          <line>33</line>
-          <properties documentPath="$PROJECT_DIR$/UnitTests/TestAll.cs" initialLine="33">
+          <line>41</line>
+          <properties documentPath="$PROJECT_DIR$/UnitTests/TestAll.cs" initialLine="41">
             <startOffsets>
-              <option value="636" />
+              <option value="807" />
             </startOffsets>
             <endOffsets>
-              <option value="761" />
+              <option value="881" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="24" />
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/SudokuSolver/Driver.cs</url>
+          <line>68</line>
+          <properties documentPath="$PROJECT_DIR$/SudokuSolver/Driver.cs" initialLine="68">
+            <startOffsets>
+              <option value="1495" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1515" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="DotNetProject">
         <watch expression="tracker.progress" language="C#" custom="RiderImportsList:" />
+      </configuration>
+      <configuration name="RiderUnitTests">
+        <watch expression="board" language="C#" custom="RiderImportsList:" />
       </configuration>
     </watches-manager>
   </component>

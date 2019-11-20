@@ -24,15 +24,26 @@ namespace UnitTests
 				catch (Exception e)
 				{
 					Console.WriteLine(e.Message);
-					return;
+					continue;
 				}
 				
 				Tracker tracker = new Tracker(board);
 				Solver solver = new Solver(tracker);
-				solver.run();
-
-				Assert.IsTrue(Utils.isCorrectSolution(board),
-					"ERROR: Could not find correct solution for file " + inputFiles[i] + ".");
+				tracker = solver.run();
+				
+				if (!tracker.valid)
+				{
+					Assert.IsFalse(Utils.isCorrectSolution(tracker.board));
+				}
+				else
+				{
+					if (tracker.solutionCnt > 1)
+					{
+						Console.WriteLine("WARNING: More than one solution found. One is shown.");
+					}
+					Assert.IsTrue(Utils.isCorrectSolution(tracker.board),
+						"ERROR: Could not find correct solution for file " + inputFiles[i] + ".");
+				}
 			}
 		}
 	}

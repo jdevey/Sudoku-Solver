@@ -26,11 +26,105 @@
           </e>
         </e>
         <e p="SamplePuzzles" t="Include">
+          <e p="BasicInput" t="Include">
+            <e p="Puzzle-04x4-0000.txt" t="Include" />
+            <e p="Puzzle-04x4-0001.txt" t="Include" />
+            <e p="Puzzle-04x4-0002.txt" t="Include" />
+            <e p="Puzzle-04x4-0101.txt" t="Include" />
+            <e p="Puzzle-04x4-0201.txt" t="Include" />
+            <e p="Puzzle-04x4-0901.txt" t="Include" />
+            <e p="Puzzle-04x4-0902.txt" t="Include" />
+            <e p="Puzzle-04x4-0903.txt" t="Include" />
+            <e p="Puzzle-04x4-0904.txt" t="Include" />
+            <e p="Puzzle-04x4-0905.txt" t="Include" />
+            <e p="Puzzle-04x4-0906.txt" t="Include" />
+            <e p="Puzzle-04x4-0907.txt" t="Include" />
+            <e p="Puzzle-16x16-0001.txt" t="Include" />
+            <e p="Puzzle-16x16-0002.txt" t="Include" />
+            <e p="Puzzle-16x16-0101.txt" t="Include" />
+            <e p="Puzzle-16x16-0102.txt" t="Include" />
+            <e p="Puzzle-16x16-0201.txt" t="Include" />
+            <e p="Puzzle-16x16-0301.txt" t="Include" />
+            <e p="Puzzle-16x16-0401.txt" t="Include" />
+            <e p="Puzzle-16x16-0901.txt" t="Include" />
+            <e p="Puzzle-16x16-0902.txt" t="Include" />
+            <e p="Puzzle-25x25-0101.txt" t="Include" />
+            <e p="Puzzle-25x25-0901.txt" t="Include" />
+            <e p="Puzzle-25x25-0902.txt" t="Include" />
+            <e p="Puzzle-25x25-0903.txt" t="Include" />
+            <e p="Puzzle-25x25-0904.txt" t="Include" />
+            <e p="Puzzle-36x36-01-A001.txt" t="Include" />
+            <e p="Puzzle-36x36-01-B001.txt" t="Include" />
+            <e p="Puzzle-36x36-01-C001.txt" t="Include" />
+            <e p="Puzzle-9x9-0001.txt" t="Include" />
+            <e p="Puzzle-9x9-0002.txt" t="Include" />
+            <e p="Puzzle-9x9-0101.txt" t="Include" />
+            <e p="Puzzle-9x9-0102.txt" t="Include" />
+            <e p="Puzzle-9x9-0103.txt" t="Include" />
+            <e p="Puzzle-9x9-0201.txt" t="Include" />
+            <e p="Puzzle-9x9-0202.txt" t="Include" />
+            <e p="Puzzle-9x9-0203.txt" t="Include" />
+            <e p="Puzzle-9x9-0204.txt" t="Include" />
+            <e p="Puzzle-9x9-0205.txt" t="Include" />
+            <e p="Puzzle-9x9-0206.txt" t="Include" />
+            <e p="Puzzle-9x9-0301.txt" t="Include" />
+            <e p="Puzzle-9x9-0302.txt" t="Include" />
+            <e p="Puzzle-9x9-0401.txt" t="Include" />
+            <e p="Puzzle-9x9-0901.txt" t="Include" />
+          </e>
           <e p="CustomInput" t="Include">
             <e p="Puzzle-4x4-000.txt" t="Include" />
           </e>
           <e p="Input" t="Include">
+            <e p="Puzzle-04x4-0000.txt" t="Include" />
             <e p="Puzzle-04x4-0001.txt" t="Include" />
+            <e p="Puzzle-04x4-0002.txt" t="Include" />
+            <e p="Puzzle-04x4-0101.txt" t="Include" />
+            <e p="Puzzle-04x4-0201.txt" t="Include" />
+            <e p="Puzzle-04x4-0901.txt" t="Include" />
+            <e p="Puzzle-04x4-0902.txt" t="Include" />
+            <e p="Puzzle-04x4-0903.txt" t="Include" />
+            <e p="Puzzle-04x4-0904.txt" t="Include" />
+            <e p="Puzzle-04x4-0905.txt" t="Include" />
+            <e p="Puzzle-04x4-0906.txt" t="Include" />
+            <e p="Puzzle-04x4-0907.txt" t="Include" />
+            <e p="Puzzle-16x16-0001.txt" t="Include" />
+            <e p="Puzzle-16x16-0002.txt" t="Include" />
+            <e p="Puzzle-16x16-0101.txt" t="Include" />
+            <e p="Puzzle-16x16-0102.txt" t="Include" />
+            <e p="Puzzle-16x16-0201.txt" t="Include" />
+            <e p="Puzzle-16x16-0301.txt" t="Include" />
+            <e p="Puzzle-16x16-0401.txt" t="Include" />
+            <e p="Puzzle-16x16-0901.txt" t="Include" />
+            <e p="Puzzle-16x16-0902.txt" t="Include" />
+            <e p="Puzzle-25x25-0101.txt" t="Include" />
+            <e p="Puzzle-25x25-0901.txt" t="Include" />
+            <e p="Puzzle-25x25-0902.txt" t="Include" />
+            <e p="Puzzle-25x25-0903.txt" t="Include" />
+            <e p="Puzzle-25x25-0904.txt" t="Include" />
+            <e p="Puzzle-36x36-01-A001.txt" t="Include" />
+            <e p="Puzzle-36x36-01-B001.txt" t="Include" />
+            <e p="Puzzle-36x36-01-C001.txt" t="Include" />
+            <e p="Puzzle-9x9-0001.txt" t="Include" />
+            <e p="Puzzle-9x9-0002.txt" t="Include" />
+            <e p="Puzzle-9x9-0101.txt" t="Include" />
+            <e p="Puzzle-9x9-0102.txt" t="Include" />
+            <e p="Puzzle-9x9-0103.txt" t="Include" />
+            <e p="Puzzle-9x9-0201.txt" t="Include" />
+            <e p="Puzzle-9x9-0202.txt" t="Include" />
+            <e p="Puzzle-9x9-0203.txt" t="Include" />
+            <e p="Puzzle-9x9-0204.txt" t="Include" />
+            <e p="Puzzle-9x9-0205.txt" t="Include" />
+            <e p="Puzzle-9x9-0206.txt" t="Include" />
+            <e p="Puzzle-9x9-0301.txt" t="Include" />
+            <e p="Puzzle-9x9-0302.txt" t="Include" />
+            <e p="Puzzle-9x9-0401.txt" t="Include" />
+            <e p="Puzzle-9x9-0901.txt" t="Include" />
+          </e>
+          <e p="MySolutions" t="Include">
+            <e p="foo.txt" t="Include" />
+          </e>
+          <e p="Output" t="Include">
             <e p="Puzzle-16x16-0001.txt" t="Include" />
             <e p="Puzzle-16x16-0002.txt" t="Include" />
             <e p="Puzzle-16x16-0101.txt" t="Include" />
@@ -75,7 +169,8 @@
             <e p="Puzzle-9x9-0401.txt" t="Include" />
             <e p="Puzzle-9x9-0901.txt" t="Include" />
           </e>
-          <e p="Output" t="Include">
+          <e p="RealInput" t="Include">
+            <e p="Puzzle-04x4-0001.txt" t="Include" />
             <e p="Puzzle-16x16-0001.txt" t="Include" />
             <e p="Puzzle-16x16-0002.txt" t="Include" />
             <e p="Puzzle-16x16-0101.txt" t="Include" />
