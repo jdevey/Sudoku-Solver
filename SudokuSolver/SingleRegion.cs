@@ -85,7 +85,7 @@ namespace SudokuSolver
 						return true;
 					}
 
-					return false;
+					break;
 			}
 			return false;
 		}
