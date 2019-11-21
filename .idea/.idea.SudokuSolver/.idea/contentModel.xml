@@ -240,6 +240,15 @@
             <e p="Puzzle-9x9-0401.txt" t="Include" />
             <e p="Puzzle-9x9-0901.txt" t="Include" />
           </e>
+          <e p="TestInput" t="Include">
+            <e p="duplicate_chars.txt" t="Include" />
+            <e p="file_too_short.txt" t="Include" />
+            <e p="incorrect_line.txt" t="Include" />
+            <e p="long_characters.txt" t="Include" />
+            <e p="not_enough_lines.txt" t="Include" />
+            <e p="working_file.txt" t="Include" />
+            <e p="wrong_num_chars.txt" t="Include" />
+          </e>
         </e>
         <e p="SingleRegion.cs" t="Include" />
         <e p="SingleSquare.cs" t="Include" />
@@ -251,6 +260,9 @@
       <e p="SudokuSolver.sln" t="IncludeFlat" />
       <e p="UnitTests" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="BoardTests.cs" t="Include" />
+        <e p="CharSetTests.cs" t="Include" />
+        <e p="FileInterfaceTests.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.1" t="Include">
@@ -258,10 +270,14 @@
             </e>
           </e>
         </e>
-        <e p="SudokuVerifier.cs" t="Include" />
+        <e p="SingleRegionTests.cs" t="Include" />
+        <e p="SingleSquareTests.cs" t="Include" />
+        <e p="SolverTests.cs" t="Include" />
         <e p="TestAll.cs" t="Include" />
-        <e p="UnitTest1.cs" t="Include" />
+        <e p="TestUtils.cs" t="Include" />
+        <e p="TrackerTests.cs" t="Include" />
         <e p="UnitTests.csproj" t="IncludeRecursive" />
+        <e p="UtilsTests.cs" t="Include" />
       </e>
     </e>
   </component>

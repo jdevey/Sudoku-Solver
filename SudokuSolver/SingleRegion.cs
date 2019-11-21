@@ -5,13 +5,13 @@ namespace SudokuSolver
 	public class SingleRegion : IStrategy
 	{
 		private int index;
-		private Constants.RegionTypes rt;
+		private Constants.RegionTypes regionType;
 		private char check;
 		
-		public SingleRegion(int index, Constants.RegionTypes rt, char check)
+		public SingleRegion(int index, Constants.RegionTypes regionType, char check)
 		{
 			this.index = index;
-			this.rt = rt;
+			this.regionType = regionType;
 			this.check = check;
 		}
 		
@@ -20,7 +20,7 @@ namespace SudokuSolver
 		{
 			int size = tracker.board.size, charCnt = 0;
 			
-			switch (rt)
+			switch (regionType)
 			{
 				case Constants.RegionTypes.ROW:
 					int f1 = -1;

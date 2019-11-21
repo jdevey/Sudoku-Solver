@@ -1,13 +1,12 @@
 ﻿using System;
 using System.IO;
-
 using NUnit.Framework;
 using SudokuSolver;
 
 namespace UnitTests
 {
 	[TestFixture]
-	public class TestAll
+	public class SolverTests
 	{
 		[Test]
 		public void Main()

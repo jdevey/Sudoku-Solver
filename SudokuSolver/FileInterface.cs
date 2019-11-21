@@ -96,7 +96,7 @@ namespace SudokuSolver
 			// Write initial puzzle
 			Console.WriteLine(initialBoard.size.ToString());
 			Console.WriteLine(lineToString(initialBoard.validCharacters.getList()));
-			string[] initFileLines = getSudokuBoardFileLines(initialBoard);
+			string[] initFileLines = getBoardFileLines(initialBoard);
 			for (int i = 0; i < initialBoard.size; ++i)
 			{
 				Console.WriteLine(initFileLines[i]);
@@ -105,7 +105,7 @@ namespace SudokuSolver
 			
 			// Write solved puzzle and stats
 			Console.WriteLine("Solved");
-			string[] solvedFileLines = getSudokuBoardFileLines(solvedBoard);
+			string[] solvedFileLines = getBoardFileLines(solvedBoard);
 			for (int i = 0; i < initialBoard.size; ++i)
 			{
 				Console.WriteLine(solvedFileLines[i]);
@@ -116,17 +116,17 @@ namespace SudokuSolver
 
 			Console.WriteLine("Strategy                        Uses            Time");
 			Console.WriteLine("Single Possibility for Square   " +
-			                  solver.SingleSquareCnt.ToString().PadRight(16, ' ') +
-			                  getTimeString(solver.SingleSquareElapsed));
+			                  solver.singleSquareCnt.ToString().PadRight(16, ' ') +
+			                  getTimeString(solver.singleSquareElapsed));
 			Console.WriteLine("Single Possibility for Region   " +
-			                  solver.SingleRegionCnt.ToString().PadRight(16, ' ') +
-			                  getTimeString(solver.SingleRegionElapsed));
+			                  solver.singleRegionCnt.ToString().PadRight(16, ' ') +
+			                  getTimeString(solver.singleRegionElapsed));
 			Console.WriteLine("Guessing strategy               " +
-			                  solver.GuessCnt.ToString().PadRight(16, ' ') +
+			                  solver.guessCnt.ToString().PadRight(16, ' ') +
 			                  getTimeString(solver.guessTimeElapsed));
 		}
 
-		public static string[] getSudokuBoardFileLines(Board sudokuBoard)
+		public static string[] getBoardFileLines(Board sudokuBoard)
 		{
 			string [] fileLines = new string[sudokuBoard.size];
 			for (int i = 0; i < sudokuBoard.size; ++i)
@@ -139,10 +139,7 @@ namespace SudokuSolver
 
 		public static string lineToString(List<char> l)
 		{
-			string s;
-			var ar = l.ToArray();
-			s = string.Join(" ", ar);
-			return s;
+			return string.Join(" ", l.ToArray());
 		}
 	}
 }
