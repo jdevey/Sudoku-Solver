@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba8f57e5-e749-401e-9e3f-c3c17f7589d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/UnitTests/BoardTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnitTests/CharSetTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnitTests/FileInterfaceTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnitTests/SingleRegionTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnitTests/SingleSquareTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnitTests/SolverTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnitTests/TestUtils.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnitTests/TrackerTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnitTests/UtilsTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/Constants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Constants.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/FileInterface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/FileInterface.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/SingleSquare.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/SingleSquare.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/Solver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Solver.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SudokuSolver/Tracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Tracker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/Utils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Utils.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/SudokuVerifier.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/TestAll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/TestAll.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/UnitTest1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/SudokuSolver.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/SudokuSolver.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/UnitTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/UnitTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/UnitTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/UnitTests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/nunit_random_seed.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/nunit_random_seed.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -141,8 +109,8 @@
         <option value="$PROJECT_DIR$/SudokuSolver/Utils.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/Solver.cs" />
-        <option value="$PROJECT_DIR$/SudokuSolver/Tracker.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/FileInterface.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/Tracker.cs" />
       </list>
     </option>
   </component>
@@ -169,7 +137,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Project.Debug">
+  <component name="RunManager">
     <configuration name="Debug" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.dll" />
       <option name="PROGRAM_PARAMETERS" value="C:\Users\devey\Code\School\CS5700\hw4\SudokuSolver\SudokuSolver\SamplePuzzles\BasicInput\Puzzle-04x4-0902.txt" />
@@ -188,9 +156,6 @@
         <option name="Build" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue=".NET Project.Debug" />
-    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />

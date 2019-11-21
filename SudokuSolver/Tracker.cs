@@ -105,7 +105,7 @@ namespace SudokuSolver
 		{
 			int sqt = Utils.getIntSqrt(board.size);
 			int row = blockInd / sqt * sqt + ind / sqt;
-			int col = blockInd % sqt * sqt + ind % sqt; // TODO test
+			int col = blockInd % sqt * sqt + ind % sqt;
 			return new Tuple<int, int>(row, col);
 		}
 	}
