@@ -276,7 +276,6 @@
         <e p="SingleRegionTests.cs" t="Include" />
         <e p="SingleSquareTests.cs" t="Include" />
         <e p="SolverTests.cs" t="Include" />
-        <e p="TestAll.cs" t="Include" />
         <e p="TestUtils.cs" t="Include" />
         <e p="TestUtilsTests.cs" t="Include" />
         <e p="TrackerTests.cs" t="Include" />

@@ -30,12 +30,7 @@ namespace UnitTests
 			};
 			Assert.IsFalse(TestUtils.boardsEqual(a, c));
 
-			Board board = null;
-			Assert.Catch(() =>
-			{
-				board = new Board(4, new CharSet(new List<char> {'0', '1', '2'}));
-			});
-			Assert.IsNull(board);
+			Assert.Catch(() => new Board(4, new CharSet(new List<char> {'0', '1', '2'})));
 
 		List<List<char>> complete = new List<List<char>>
 			{

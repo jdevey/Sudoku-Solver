@@ -2,23 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba8f57e5-e749-401e-9e3f-c3c17f7589d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/UnitTests/TestUtilsTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/Board.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Board.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/CharSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/CharSet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/Driver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Driver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/SingleSquare.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/SingleSquare.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/Tracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Tracker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/Utils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Utils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/Constants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Constants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/Solver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Solver.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/BoardTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/BoardTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/TestUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/TestUtils.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/TrackerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/TrackerTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/TestAll.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/TestUtilsTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/TestUtilsTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/SudokuSolver.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/SudokuSolver.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/UnitTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/UnitTests.dll" afterDir="false" />
@@ -98,7 +90,6 @@
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/UnitTests/TestAll.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
@@ -117,7 +108,6 @@
         <option value="$PROJECT_DIR$/SudokuSolver/IStrategy.cs" />
         <option value="$PROJECT_DIR$/UnitTests/SudokuVerifier.cs" />
         <option value="$PROJECT_DIR$/UnitTests/Template.cs" />
-        <option value="$PROJECT_DIR$/SudokuSolver/Constants.cs" />
         <option value="$PROJECT_DIR$/UnitTests/CharSetTests.cs" />
         <option value="$PROJECT_DIR$/UnitTests/FileInterfaceTests.cs" />
         <option value="$PROJECT_DIR$/UnitTests/TestAll.cs" />
@@ -125,7 +115,6 @@
         <option value="$PROJECT_DIR$/UnitTests/UtilsTests.cs" />
         <option value="$PROJECT_DIR$/UnitTests/SingleSquareTests.cs" />
         <option value="$PROJECT_DIR$/UnitTests/SingleRegionTests.cs" />
-        <option value="$PROJECT_DIR$/SudokuSolver/Solver.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/Utils.cs" />
         <option value="$PROJECT_DIR$/UnitTests/SolverTests.cs" />
         <option value="$PROJECT_DIR$/UnitTests/BoardTests.cs" />
@@ -136,8 +125,10 @@
         <option value="$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/SingleSquare.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/Tracker.cs" />
-        <option value="$PROJECT_DIR$/UnitTests/TestUtilsTests.cs" />
         <option value="$PROJECT_DIR$/UnitTests/TrackerTests.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/Constants.cs" />
+        <option value="$PROJECT_DIR$/UnitTests/TestUtilsTests.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/Solver.cs" />
       </list>
     </option>
   </component>

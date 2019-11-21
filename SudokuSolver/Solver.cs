@@ -79,11 +79,7 @@ namespace SudokuSolver
 			{
 				for (int j = 0; j < size; ++j)
 				{
-					if (tracker.board.board[i][j] != '-')
-					{
-						continue;
-					}
-
+					if (tracker.board.board[i][j] != '-') continue;
 					CharSet possib = tracker.progress[i][j];
 					if (possib.size() == 2) // minimal
 					{
@@ -103,19 +99,31 @@ namespace SudokuSolver
 								{
 									tracker = retTracker;
 									tracker.solutionCnt = 2;
-									i = size;
-									j = size;
-									l = 2;
+									i = size; j = size; l = 2; // break from loop
 								}
 							}
 						}
 					}
 				}
 			}
-
 			long guessEnd = DateTime.Now.Ticks;
 			long timeMicros = (guessEnd - guessStart) / 10;
 			guessTimeElapsed += timeMicros;
+		}
+
+		private void incrementFromStrategy(IStrategy top, bool success, long micros)
+		{
+			if (top.GetType() == typeof(SingleSquare))
+			{
+				singleSquareElapsed += micros;
+				if (success) ++singleSquareCnt;
+			}
+			else if (top.GetType() == typeof(SingleRegion))
+			{
+				singleRegionElapsed += micros;
+				if (success) ++singleRegionCnt;
+			}
+			if (!success) stratQueue.Enqueue(top);
 		}
 
 		public Tracker run()
@@ -129,37 +137,11 @@ namespace SudokuSolver
 				long start = DateTime.Now.Ticks;
 				bool success = top.execute(tracker);
 				long end = DateTime.Now.Ticks;
-				if (success)
-				{
-					if (!tracker.valid)
-					{
-						break;
-					}
-				}
-
-				fails = success ? 0 : fails + 1;
 				long micros = (end - start) / 10;
-				if (top.GetType() == typeof(SingleSquare))
-				{
-					singleSquareElapsed += micros;
-					if (success)
-					{
-						++singleSquareCnt;
-					}
-				}
-				else if (top.GetType() == typeof(SingleRegion))
-				{
-					singleRegionElapsed += micros;
-					if (success)
-					{
-						++singleRegionCnt;
-					}
-				}
-
-				if (!success)
-				{
-					stratQueue.Enqueue(top);
-				}
+				if (success && !tracker.valid) break;
+				fails = success ? 0 : fails + 1;
+				
+				incrementFromStrategy(top, success, micros);
 
 				if (fails >= MAX_TRIES /* && tracker.solutionCnt < 2*/)
 				{
