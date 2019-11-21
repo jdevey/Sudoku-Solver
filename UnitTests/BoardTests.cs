@@ -29,11 +29,13 @@ namespace UnitTests
 				new List<char> {'3', '1', '4', '-'},
 				new List<char> {'-', '2', '1', '3'}
 			};
-			Assert.True(TestUtils.boardsEqual(expected, board.board));
+			Assert.IsTrue(TestUtils.boardsEqual(expected, board.board));
+			Board copied = new Board(4, new CharSet(new List<char>{'1', '2', '3', '4'}), expected);
+			Assert.IsTrue(TestUtils.boardsEqual(expected, copied.board));
 			
 			// Copy constructor
 			Board otherBoard = new Board(board);
-			Assert.True(TestUtils.boardsEqual(otherBoard.board, board.board));
+			Assert.IsTrue(TestUtils.boardsEqual(otherBoard.board, board.board));
 
 			Assert.Catch<Exception>(() => board.setCell(100, 100, '1'));
 			Assert.Catch<Exception>(() => board.setCell(0, 0, '0'));

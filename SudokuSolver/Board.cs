@@ -6,25 +6,33 @@ namespace SudokuSolver
 	public class Board
 	{
 		public int size { get; }
-		public List<List <char>> board { get; }
+		public List<List<char>> board { get; }
 		public CharSet validCharacters { get; }
 
-		public Board(int size, CharSet validCharacters)
+		public Board(int size, CharSet validCharacters, List<List<char>> state = null)
 		{
 			if (size != validCharacters.size())
 			{
 				throw new Exception("ERROR: Specified sudoku board size does not equal the number of characters listed.");
 			}
+
 			this.size = size;
 			this.validCharacters = validCharacters;
-			board = new List<List<char>>();
-			for (int i = 0; i < size; ++i)
+			if (state == null)
 			{
-				board.Add(new List<char>());
-				for (int j = 0; j < size; ++j)
+				board = new List<List<char>>();
+				for (int i = 0; i < size; ++i)
 				{
-					board[i].Add('\0');
+					board.Add(new List<char>());
+					for (int j = 0; j < size; ++j)
+					{
+						board[i].Add('\0');
+					}
 				}
+			}
+			else
+			{
+				board = state;
 			}
 		}
 
@@ -70,6 +78,7 @@ namespace SudokuSolver
 				{
 					Console.Write(cell + " ");
 				}
+
 				Console.WriteLine();
 			}
 		}

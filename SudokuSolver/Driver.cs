@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.IO;
 
 namespace SudokuSolver
@@ -24,7 +23,7 @@ namespace SudokuSolver
 				return;
 			}
 
-			Board sudokuBoard = null;
+			Board sudokuBoard;
 			try
 			{
 				sudokuBoard = FileInterface.readFromFile(args[0]);

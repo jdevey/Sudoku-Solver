@@ -4,9 +4,9 @@ namespace SudokuSolver
 {
 	public class SingleRegion : IStrategy
 	{
-		private int index;
-		private Constants.RegionTypes regionType;
-		private char check;
+		private readonly int index;
+		private readonly Constants.RegionTypes regionType;
+		private readonly char check;
 		
 		public SingleRegion(int index, Constants.RegionTypes regionType, char check)
 		{

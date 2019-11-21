@@ -11,9 +11,9 @@ namespace SudokuSolver
 		// The possibilities for each cell of the board thus far
 		public List<List<CharSet>> progress { get; } = new List<List<CharSet>>();
 		
-		public int filledCnt { get; set; }
+		public int filledCnt { get; private set; }
 
-		public bool valid { get; set; } = true;
+		public bool valid { get; private set; } = true;
 
 		public int solutionCnt { get; set; }
 
@@ -48,7 +48,7 @@ namespace SudokuSolver
 		}
 
 		// Eliminate a possibility for a cell and do nothing else
-		private void eliminatePossibility(int row, int col, char value)
+		public void eliminatePossibility(int row, int col, char value)
 		{
 			progress[row][col].erase(value);
 			if (progress[row][col].size() == 0)
@@ -93,13 +93,6 @@ namespace SudokuSolver
 					eliminatePossibility(baseRow + i / sqt, baseCol + i % sqt, c);
 			}
 		}
-
-		// Converts a coordinate into which block it is
-//		public int convertToBlock(int row, int col)
-//		{
-//			int sqt = Utils.getIntSqrt(board.size);
-//			return row / sqt * sqt + col / sqt;
-//		}
 
 		public Tuple<int, int> convertFromBlock(int blockInd, int ind)
 		{

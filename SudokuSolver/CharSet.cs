@@ -5,7 +5,7 @@ namespace SudokuSolver
 {
 	public class CharSet
 	{
-		public List<bool> mem { get; }
+		private List<bool> mem { get; }
 		private List<char> set { get; } = new List<char>();
 		private int numAlloc;
 

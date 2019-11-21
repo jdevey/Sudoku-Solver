@@ -34,10 +34,6 @@ namespace UnitTests
 		public static bool isCorrectSolution(Board board)
 		{
 			int size = board.size;
-			if (board.board.Count != size || board.board.Count != size)
-			{
-				return false;
-			}
 
 			for (int i = 0; i < size; ++i)
 			{

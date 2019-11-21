@@ -2,8 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba8f57e5-e749-401e-9e3f-c3c17f7589d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/UnitTests/TestUtilsTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SudokuSolver/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/Board.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Board.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/CharSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/CharSet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/Driver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Driver.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuSolver/Solver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Solver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/SingleSquare.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/SingleSquare.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/Tracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Tracker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/Utils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/Utils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuSolver/obj/Debug/netcoreapp2.1/SudokuSolver.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/BoardTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/BoardTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/TestUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/TestUtils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/TrackerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/TrackerTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/SudokuSolver.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/SudokuSolver.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/SudokuSolver.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/UnitTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/UnitTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/UnitTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/UnitTests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/nunit_random_seed.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/nunit_random_seed.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +80,7 @@
     <setting file="file://$PROJECT_DIR$/SudokuSolver/Constants.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UnitTests/TestUtilsTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SudokuSolver/Tracker.cs" root0="FORCE_HIGHLIGHTING" />
@@ -92,27 +116,28 @@
         <option value="$PROJECT_DIR$/SudokuSolver/SamplePuzzles/SingleRegion.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/IStrategy.cs" />
         <option value="$PROJECT_DIR$/UnitTests/SudokuVerifier.cs" />
-        <option value="$PROJECT_DIR$/SudokuSolver/Board.cs" />
-        <option value="$PROJECT_DIR$/SudokuSolver/CharSet.cs" />
         <option value="$PROJECT_DIR$/UnitTests/Template.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/Constants.cs" />
-        <option value="$PROJECT_DIR$/UnitTests/BoardTests.cs" />
         <option value="$PROJECT_DIR$/UnitTests/CharSetTests.cs" />
         <option value="$PROJECT_DIR$/UnitTests/FileInterfaceTests.cs" />
-        <option value="$PROJECT_DIR$/UnitTests/TestUtils.cs" />
         <option value="$PROJECT_DIR$/UnitTests/TestAll.cs" />
-        <option value="$PROJECT_DIR$/SudokuSolver/SingleSquare.cs" />
-        <option value="$PROJECT_DIR$/UnitTests/TrackerTests.cs" />
-        <option value="$PROJECT_DIR$/UnitTests/SolverTests.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/FileInterface.cs" />
-        <option value="$PROJECT_DIR$/SudokuSolver/Tracker.cs" />
-        <option value="$PROJECT_DIR$/SudokuSolver/Driver.cs" />
         <option value="$PROJECT_DIR$/UnitTests/UtilsTests.cs" />
         <option value="$PROJECT_DIR$/UnitTests/SingleSquareTests.cs" />
         <option value="$PROJECT_DIR$/UnitTests/SingleRegionTests.cs" />
-        <option value="$PROJECT_DIR$/SudokuSolver/Utils.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/Solver.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/Utils.cs" />
+        <option value="$PROJECT_DIR$/UnitTests/SolverTests.cs" />
+        <option value="$PROJECT_DIR$/UnitTests/BoardTests.cs" />
+        <option value="$PROJECT_DIR$/UnitTests/TestUtils.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/Driver.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/Board.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/CharSet.cs" />
         <option value="$PROJECT_DIR$/SudokuSolver/SingleRegion.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/SingleSquare.cs" />
+        <option value="$PROJECT_DIR$/SudokuSolver/Tracker.cs" />
+        <option value="$PROJECT_DIR$/UnitTests/TestUtilsTests.cs" />
+        <option value="$PROJECT_DIR$/UnitTests/TrackerTests.cs" />
       </list>
     </option>
   </component>
@@ -189,34 +214,12 @@
     <option name="coveragePercentColumnWidth" value="103" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="1" />
-    <option name="symbolColumnWidth" value="192" />
+    <option name="symbolColumnWidth" value="197" />
     <coverage-tree-state>
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
           <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="3" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="3" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="6" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="2" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="2" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="7" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />
@@ -247,19 +250,6 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UnitTests/SingleSquareTests.cs</url>
-          <line>16</line>
-          <properties documentPath="$PROJECT_DIR$/UnitTests/SingleSquareTests.cs" initialLine="15">
-            <startOffsets>
-              <option value="340" />
-            </startOffsets>
-            <endOffsets>
-              <option value="377" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>

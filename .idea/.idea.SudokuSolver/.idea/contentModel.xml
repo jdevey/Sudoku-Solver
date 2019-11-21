@@ -278,6 +278,7 @@
         <e p="SolverTests.cs" t="Include" />
         <e p="TestAll.cs" t="Include" />
         <e p="TestUtils.cs" t="Include" />
+        <e p="TestUtilsTests.cs" t="Include" />
         <e p="TrackerTests.cs" t="Include" />
         <e p="UnitTests.csproj" t="IncludeRecursive" />
         <e p="UtilsTests.cs" t="Include" />

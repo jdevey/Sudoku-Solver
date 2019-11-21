@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.ObjectModel;
-
-namespace SudokuSolver
+﻿namespace SudokuSolver
 {
 	// Class to execute the single square strat
 	public class SingleSquare : IStrategy
 	{
-		public int row { get; }
-		public int col { get; }
+		private int row { get; }
+		private int col { get; }
 		
 		public SingleSquare(int row, int col)
 		{
