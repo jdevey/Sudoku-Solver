@@ -31,10 +31,13 @@ namespace SudokuSolver
 			}
 			catch (Exception e)
 			{
-				string[] allLines = File.ReadAllLines(args[0]);
-				foreach (string l in allLines)
+				if (File.Exists(args[0]))
 				{
-					Console.WriteLine(l);
+					string[] allLines = File.ReadAllLines(args[0]);
+					foreach (string l in allLines)
+					{
+						Console.WriteLine(l);
+					}
 				}
 				Console.WriteLine();
 				Console.WriteLine(e.Message);

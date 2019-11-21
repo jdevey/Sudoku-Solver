@@ -71,24 +71,10 @@ namespace SudokuSolver
 			}
 		}
 
-//		private int getMinGuessSize()
-//		{
-//			int mn = tracker.board.size;
-//			for (int i = 0; i < size; ++i)
-//			{
-//				for (int j = 0; j < size; ++j)
-//				{
-//					mn = Math.Min(mn, tracker.progress[i][j].size());
-//				}
-//			}
-//
-//			return mn;
-//		}
-		
 		private void guessAll()
 		{
 			long guessStart = DateTime.Now.Ticks;
-			for (int k = 2; k < size; ++k)
+			for (int k = 2; k < 4; ++k)
 			{
 				for (int i = 0; i < size; ++i)
 				{
@@ -126,8 +112,6 @@ namespace SudokuSolver
 				}
 			}
 
-			tracker.valid = false;
-			
 			breakout:
 			
 			long guessEnd = DateTime.Now.Ticks;
@@ -140,7 +124,6 @@ namespace SudokuSolver
 			prepareBoard();
 			long totalStart = DateTime.Now.Ticks;
 			int fails = 0;
-			//Tuple <int, int> lastSingleSquare = new Tuple<int, int>(-1, -1);
 			while (tracker.filledCnt < size * size)
 			{
 				IStrategy top = stratQueue.Dequeue();
@@ -179,7 +162,6 @@ namespace SudokuSolver
 
 				if (fails >= MAX_TRIES/* && tracker.solutionCnt < 2*/)
 				{
-					//Console.WriteLine("Can't solve board without guessing.");
 					guessAll();
 					break;
 				}

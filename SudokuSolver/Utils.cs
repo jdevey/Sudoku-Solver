@@ -7,7 +7,7 @@ namespace SudokuSolver
 	{
 		public static bool isValidCoord(int size, int y, int x)
 		{
-			return y < size && x < size;
+			return y < size && x < size && y > -1 && x > -1;
 		}
 		
 		public static List<T> listCopy <T>(List<T> l)

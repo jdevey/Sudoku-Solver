@@ -43,6 +43,8 @@
             <e p="Puzzle-16x16-0001.txt" t="Include" />
             <e p="Puzzle-25x25-0101.txt" t="Include" />
             <e p="Puzzle-36x36-01-A001.txt" t="Include" />
+            <e p="Puzzle-36x36-01-B001.txt" t="Include" />
+            <e p="Puzzle-36x36-01-C001.txt" t="Include" />
             <e p="Puzzle-9x9-0001.txt" t="Include" />
             <e p="Puzzle-9x9-0002.txt" t="Include" />
             <e p="Puzzle-9x9-0101.txt" t="Include" />
@@ -57,6 +59,7 @@
           </e>
           <e p="DefaultOutput" t="Include">
             <e p="foo.txt" t="Include" />
+            <e p="myoutput.txt" t="Include" />
           </e>
           <e p="Input" t="Include">
             <e p="Puzzle-04x4-0000.txt" t="Include" />
