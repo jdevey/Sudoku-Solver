@@ -1,3 +1,6 @@
 *.exe
 *.zip
-
+.idea/
+packages/
+bin/
+obj/
